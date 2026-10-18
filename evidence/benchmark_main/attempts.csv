@@ -1,7 +1,0 @@
-method,attempt,elapsed_s,peak_tree_rss_mib,rss_samples,exit_code,results_verified,workers,chunk_rows
-mapreduce,1,21.154,364.89,327,0,True,2,1000
-duckdb,1,18.839,1061.55,291,0,True,2,
-mapreduce,2,19.545,369.41,305,0,True,2,1000
-duckdb,2,15.814,1246.5,249,0,True,2,
-mapreduce,3,20.616,338.7,321,0,True,2,1000
-duckdb,3,14.87,1309.12,237,0,True,2,

@@ -1,4 +1,0 @@
-region,vacancies,with_skills,salary_count,salary_share_pct,median_salary,skill_occurrences,pair_occurrences,triple_occurrences
-Москва,1908,1430,381,19.97,200000.0,9414,38649,138055
-Санкт-Петербург,525,403,144,27.43,150000.0,2634,9997,31583
-Екатеринбург,152,122,45,29.61,150000.0,737,2684,7949

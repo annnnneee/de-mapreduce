@@ -1,0 +1,31 @@
+{
+  "variant": 2,
+  "source": "s3://hh-lake/raw/it_vacancies_2024.csv",
+  "source_sha256": "303db922b541e4440906f5a7e8be32fb55e8808f950ffddb8c272f1548212a65",
+  "source_bytes": 847619384,
+  "source_rows": 229388,
+  "selected_rows": 3892,
+  "chunks": 230,
+  "chunk_rows": 1000,
+  "workers": 2,
+  "retries": [],
+  "unique_combinations": {
+    "1": 1269,
+    "2": 17798,
+    "3": 115106
+  },
+  "combination_occurrences": {
+    "1": 19727,
+    "2": 81302,
+    "3": 291454
+  },
+  "uploaded": [
+    {
+      "key": "results/mapreduce/manifest.json",
+      "bytes": 4503,
+      "sha256": "822c308824bf380e72bce8ebef0288f681ebe2225507aaea36aa07def40eddab"
+    }
+  ],
+  "upload_complete": true,
+  "elapsed_s": 23.295
+}

@@ -1,0 +1,30 @@
+{
+  "left": "mapreduce",
+  "right": "mapper_failure",
+  "selected_ids_match": true,
+  "selected_ids_differences": [],
+  "comparisons": [
+    {
+      "k": 1,
+      "keys_left": 1269,
+      "keys_right": 1269,
+      "differences": 0,
+      "examples": []
+    },
+    {
+      "k": 2,
+      "keys_left": 17798,
+      "keys_right": 17798,
+      "differences": 0,
+      "examples": []
+    },
+    {
+      "k": 3,
+      "keys_left": 115106,
+      "keys_right": 115106,
+      "differences": 0,
+      "examples": []
+    }
+  ],
+  "all_equal": true
+}

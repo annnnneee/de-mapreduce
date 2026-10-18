@@ -1,0 +1,662 @@
+skills,base,added_skill,vacancies,salary_count,base_vacancies,base_salary_count,base_median,median,difference,difference_pct
+elasticsearch + python + redis,python + redis,elasticsearch,21,11,457,138,180000.0,420000.0,240000.0,133.33
+kafka + python + redis,python + redis,kafka,58,11,457,138,180000.0,420000.0,240000.0,133.33
+asyncio + postgresql + redis,postgresql + redis,asyncio,32,18,314,104,180000.0,400000.0,220000.0,122.22
+asyncio + python + redis,python + redis,asyncio,36,19,457,138,180000.0,400000.0,220000.0,122.22
+bottle + postgresql + python,postgresql + python,bottle,11,11,1304,321,175000.0,375000.0,200000.0,114.29
+postgresql + python + zeromq,postgresql + python,zeromq,11,11,1304,321,175000.0,375000.0,200000.0,114.29
+aiohttp + python + rabbitmq,python + rabbitmq,aiohttp,31,13,307,73,200000.0,420000.0,220000.0,110.0
+asyncio + python + rabbitmq,python + rabbitmq,asyncio,31,13,307,73,200000.0,420000.0,220000.0,110.0
+kafka + postgresql + rabbitmq,postgresql + rabbitmq,kafka,41,10,238,54,200000.0,420000.0,220000.0,110.0
+kafka + python + rabbitmq,python + rabbitmq,kafka,53,11,307,73,200000.0,420000.0,220000.0,110.0
+kafka + rabbitmq + redis,rabbitmq + redis,kafka,31,10,113,42,200000.0,420000.0,220000.0,110.0
+bottle + postgresql + redis,postgresql + redis,bottle,11,11,314,104,180000.0,375000.0,195000.0,108.33
+bottle + python + redis,python + redis,bottle,11,11,457,138,180000.0,375000.0,195000.0,108.33
+clickhouse + postgresql + redis,postgresql + redis,clickhouse,40,13,314,104,180000.0,375000.0,195000.0,108.33
+clickhouse + python + redis,python + redis,clickhouse,47,15,457,138,180000.0,375000.0,195000.0,108.33
+postgresql + redis + zeromq,postgresql + redis,zeromq,11,11,314,104,180000.0,375000.0,195000.0,108.33
+python + redis + zeromq,python + redis,zeromq,11,11,457,138,180000.0,375000.0,195000.0,108.33
+asyncio + postgresql + python,postgresql + python,asyncio,68,36,1304,321,175000.0,345000.0,170000.0,97.14
+elasticsearch + postgresql + python,postgresql + python,elasticsearch,31,13,1304,321,175000.0,335000.0,160000.0,91.43
+fastapi + python + rabbitmq,fastapi + python,rabbitmq,71,20,508,149,175000.0,320000.0,145000.0,82.86
+elasticsearch + postgresql + redis,postgresql + redis,elasticsearch,20,14,314,104,180000.0,317500.0,137500.0,76.39
+css + html + postgresql,css + html,postgresql,19,13,51,33,100000.0,175000.0,75000.0,75.0
+asyncio + fastapi + python,fastapi + python,asyncio,49,21,508,149,175000.0,300000.0,125000.0,71.43
+clickhouse + postgresql + python,postgresql + python,clickhouse,99,29,1304,321,175000.0,300000.0,125000.0,71.43
+fastapi + kafka + postgresql,fastapi + postgresql,kafka,51,20,312,87,175000.0,300000.0,125000.0,71.43
+fastapi + kafka + python,fastapi + python,kafka,58,21,508,149,175000.0,300000.0,125000.0,71.43
+kafka + postgresql + python,postgresql + python,kafka,141,26,1304,321,175000.0,300000.0,125000.0,71.43
+aiohttp + asyncio + fastapi,aiohttp + fastapi,asyncio,18,12,57,23,250000.0,420000.0,170000.0,68.0
+django + redis + sql,django + sql,redis,28,10,139,43,150000.0,250000.0,100000.0,66.67
+aiohttp + fastapi + rabbitmq,fastapi + rabbitmq,aiohttp,18,11,74,21,260000.0,420000.0,160000.0,61.54
+asyncio + fastapi + rabbitmq,fastapi + rabbitmq,asyncio,16,10,74,21,260000.0,420000.0,160000.0,61.54
+celery + rabbitmq + redis,celery + redis,rabbitmq,31,12,118,46,140000.0,225000.0,85000.0,60.71
+asyncio + fastapi + postgresql,fastapi + postgresql,asyncio,29,14,312,87,175000.0,275000.0,100000.0,57.14
+docker + kafka + python,docker + python,kafka,99,14,792,196,160000.0,250000.0,90000.0,56.25
+docker + rest api + sql,docker + sql,rest api,58,10,277,75,150000.0,231250.0,81250.0,54.17
+nginx + python + rest,python + rest,nginx,18,13,272,57,130000.0,200000.0,70000.0,53.85
+fastapi + postgresql + rabbitmq,fastapi + postgresql,rabbitmq,60,13,312,87,175000.0,260000.0,85000.0,48.57
+asyncio + git + python,git + python,asyncio,31,11,905,260,135000.0,200000.0,65000.0,48.15
+bash + git + python,git + python,bash,48,18,905,260,135000.0,200000.0,65000.0,48.15
+celery + django + nosql,celery + django,nosql,11,10,76,40,135000.0,200000.0,65000.0,48.15
+celery + django + rabbitmq,celery + django,rabbitmq,17,10,76,40,135000.0,200000.0,65000.0,48.15
+celery + django + английский язык,celery + django,английский язык,11,10,76,40,135000.0,200000.0,65000.0,48.15
+celery + nosql + python,celery + python,nosql,12,10,191,65,135000.0,200000.0,65000.0,48.15
+aiohttp + kafka + python,kafka + python,aiohttp,27,12,199,33,250000.0,360000.0,110000.0,44.0
+aiohttp + fastapi + postgresql,fastapi + postgresql,aiohttp,37,15,312,87,175000.0,250000.0,75000.0,42.86
+aiohttp + fastapi + python,fastapi + python,aiohttp,53,23,508,149,175000.0,250000.0,75000.0,42.86
+backend + django framework + docker,django framework + docker,backend,32,13,252,78,140000.0,200000.0,60000.0,42.86
+bash + linux + python,linux + python,bash,60,19,660,189,140000.0,200000.0,60000.0,42.86
+django framework + docker + rabbitmq,django framework + docker,rabbitmq,49,15,252,78,140000.0,200000.0,60000.0,42.86
+django framework + html + python,django framework + python,html,26,11,722,203,140000.0,200000.0,60000.0,42.86
+django framework + rabbitmq + sql,django framework + sql,rabbitmq,21,10,171,64,140000.0,200000.0,60000.0,42.86
+fastapi + python + redis,fastapi + python,redis,88,25,508,149,175000.0,250000.0,75000.0,42.86
+git + rabbitmq + sql,git + sql,rabbitmq,62,10,303,94,140000.0,200000.0,60000.0,42.86
+postgresql + rabbitmq + redis,postgresql + redis,rabbitmq,93,30,314,104,180000.0,255000.0,75000.0,41.67
+django + docker + sql,docker + sql,django,76,20,277,75,150000.0,210000.0,60000.0,40.0
+django + flask + sql,django + sql,flask,38,13,139,43,150000.0,210000.0,60000.0,40.0
+docker + flask + sql,docker + sql,flask,45,16,277,75,150000.0,210000.0,60000.0,40.0
+javascript + php + python,javascript + python,php,20,10,225,61,100000.0,140000.0,40000.0,40.0
+python + solid + sql,python + sql,solid,16,10,773,222,150000.0,210000.0,60000.0,40.0
+celery + django framework + python,django framework + python,celery,106,35,722,203,140000.0,195000.0,55000.0,39.29
+api + postgresql + redis,postgresql + redis,api,30,11,314,104,180000.0,250000.0,70000.0,38.89
+bash + git + linux,git + linux,bash,39,15,357,126,145000.0,200000.0,55000.0,37.93
+docker + postgresql + rabbitmq,docker + postgresql,rabbitmq,125,23,484,120,152500.0,210000.0,57500.0,37.7
+aiohttp + postgresql + python,postgresql + python,aiohttp,64,22,1304,321,175000.0,240000.0,65000.0,37.14
+celery + django framework + docker,django framework + docker,celery,77,28,252,78,140000.0,190000.0,50000.0,35.71
+celery + django framework + sql,django framework + sql,celery,38,12,171,64,140000.0,190000.0,50000.0,35.71
+django framework + python + rabbitmq,django framework + python,rabbitmq,79,22,722,203,140000.0,190000.0,50000.0,35.71
+flask + git + linux,git + linux,flask,47,10,357,126,145000.0,195000.0,50000.0,34.48
+docker + kubernetes + python,docker + python,kubernetes,135,16,792,196,160000.0,215000.0,55000.0,34.38
+fastapi + kubernetes + postgresql,fastapi + postgresql,kubernetes,43,10,312,87,175000.0,235000.0,60000.0,34.29
+django framework + kafka + python,django framework + python,kafka,45,10,722,203,140000.0,187500.0,47500.0,33.93
+backend + django framework + redis,django framework + redis,backend,23,13,157,57,150000.0,200000.0,50000.0,33.33
+django + python + rabbitmq,django + python,rabbitmq,74,17,360,109,150000.0,200000.0,50000.0,33.33
+django + rest api + sql,django + sql,rest api,53,11,139,43,150000.0,200000.0,50000.0,33.33
+docker + nosql + sql,docker + sql,nosql,27,11,277,75,150000.0,200000.0,50000.0,33.33
+docker + rabbitmq + redis,docker + redis,rabbitmq,64,18,186,62,150000.0,200000.0,50000.0,33.33
+nosql + python + sql,python + sql,nosql,53,13,773,222,150000.0,200000.0,50000.0,33.33
+python + rabbitmq + sql,python + sql,rabbitmq,98,23,773,222,150000.0,200000.0,50000.0,33.33
+git + python + rabbitmq,git + python,rabbitmq,113,22,905,260,135000.0,177500.0,42500.0,31.48
+kubernetes + postgresql + python,postgresql + python,kubernetes,146,24,1304,321,175000.0,230000.0,55000.0,31.43
+docker + fastapi + postgresql,docker + postgresql,fastapi,126,27,484,120,152500.0,200000.0,47500.0,31.15
+fastapi + rabbitmq + redis,rabbitmq + redis,fastapi,36,13,113,42,200000.0,260000.0,60000.0,30.0
+aiohttp + git + python,git + python,aiohttp,42,10,905,260,135000.0,175000.0,40000.0,29.63
+clickhouse + git + python,git + python,clickhouse,31,13,905,260,135000.0,175000.0,40000.0,29.63
+git + nginx + python,git + python,nginx,63,21,905,260,135000.0,175000.0,40000.0,29.63
+django framework + nginx + postgresql,django framework + postgresql,nginx,33,20,442,111,140000.0,180000.0,40000.0,28.57
+flask + linux + python,linux + python,flask,94,16,660,189,140000.0,180000.0,40000.0,28.57
+git + nginx + postgresql,git + postgresql,nginx,51,14,494,145,140000.0,180000.0,40000.0,28.57
+graphql + postgresql + python,postgresql + python,graphql,17,10,1304,321,175000.0,225000.0,50000.0,28.57
+linux + python + rabbitmq,linux + python,rabbitmq,54,16,660,189,140000.0,180000.0,40000.0,28.57
+ms sql + python + sql,python + sql,ms sql,21,16,773,222,150000.0,192500.0,42500.0,28.33
+git + nginx + sql,git + sql,nginx,43,12,303,94,140000.0,177500.0,37500.0,26.79
+linux + nginx + python,linux + python,nginx,33,16,660,189,140000.0,177500.0,37500.0,26.79
+linux + postgresql + rabbitmq,linux + postgresql,rabbitmq,36,10,271,75,140000.0,177500.0,37500.0,26.79
+numpy + pandas + python,pandas + python,numpy,36,12,67,22,150000.0,190000.0,40000.0,26.67
+asyncio + clickhouse + postgresql,clickhouse + postgresql,asyncio,23,12,99,29,300000.0,375000.0,75000.0,25.0
+backend + docker + sql,docker + sql,backend,29,16,277,75,150000.0,187500.0,37500.0,25.0
+bash + django framework + python,django framework + python,bash,22,14,722,203,140000.0,175000.0,35000.0,25.0
+bottle + clickhouse + postgresql,clickhouse + postgresql,bottle,11,11,99,29,300000.0,375000.0,75000.0,25.0
+bottle + clickhouse + python,clickhouse + python,bottle,18,11,129,34,300000.0,375000.0,75000.0,25.0
+celery + django + docker,django + docker,celery,49,21,160,53,160000.0,200000.0,40000.0,25.0
+clickhouse + git + postgresql,git + postgresql,clickhouse,25,10,494,145,140000.0,175000.0,35000.0,25.0
+clickhouse + linux + python,linux + python,clickhouse,41,16,660,189,140000.0,175000.0,35000.0,25.0
+clickhouse + postgresql + zeromq,clickhouse + postgresql,zeromq,11,11,99,29,300000.0,375000.0,75000.0,25.0
+clickhouse + python + zeromq,clickhouse + python,zeromq,11,11,129,34,300000.0,375000.0,75000.0,25.0
+docker + html + python,docker + python,html,23,11,792,196,160000.0,200000.0,40000.0,25.0
+docker + nosql + python,docker + python,nosql,52,16,792,196,160000.0,200000.0,40000.0,25.0
+docker + python + rabbitmq,docker + python,rabbitmq,159,33,792,196,160000.0,200000.0,40000.0,25.0
+kafka + python + rest api,python + rest api,kafka,27,10,225,66,150000.0,187500.0,37500.0,25.0
+postgresql + rabbitmq + sql,postgresql + sql,rabbitmq,71,14,369,99,150000.0,187500.0,37500.0,25.0
+git + linux + nginx,git + linux,nginx,22,14,357,126,145000.0,180000.0,35000.0,24.14
+git + linux + rabbitmq,git + linux,rabbitmq,38,13,357,126,145000.0,180000.0,35000.0,24.14
+flask + nginx + sql,flask + sql,nginx,11,10,121,37,155000.0,190000.0,35000.0,22.58
+clickhouse + linux + postgresql,linux + postgresql,clickhouse,26,12,271,75,140000.0,170000.0,30000.0,21.43
+clickhouse + git + linux,git + linux,clickhouse,17,11,357,126,145000.0,175000.0,30000.0,20.69
+docker + git + linux,git + linux,docker,133,46,357,126,145000.0,175000.0,30000.0,20.69
+fastapi + git + linux,git + linux,fastapi,57,18,357,126,145000.0,175000.0,30000.0,20.69
+git + linux + redis,git + linux,redis,47,23,357,126,145000.0,175000.0,30000.0,20.69
+aiohttp + fastapi + kafka,fastapi + kafka,aiohttp,15,12,62,22,300000.0,360000.0,60000.0,20.0
+aiohttp + kafka + postgresql,kafka + postgresql,aiohttp,19,12,145,29,300000.0,360000.0,60000.0,20.0
+api + docker + redis,docker + redis,api,27,11,186,62,150000.0,180000.0,30000.0,20.0
+bash + python + sql,python + sql,bash,34,16,773,222,150000.0,180000.0,30000.0,20.0
+celery + django framework + redis,django framework + redis,celery,67,26,157,57,150000.0,180000.0,30000.0,20.0
+celery + docker + sql,docker + sql,celery,36,13,277,75,150000.0,180000.0,30000.0,20.0
+django framework + fastapi + git,django framework + git,fastapi,43,19,295,107,125000.0,150000.0,25000.0,20.0
+django framework + flask + git,django framework + git,flask,48,15,295,107,125000.0,150000.0,25000.0,20.0
+django framework + git + mysql,django framework + git,mysql,41,17,295,107,125000.0,150000.0,25000.0,20.0
+django framework + rabbitmq + redis,django framework + redis,rabbitmq,39,17,157,57,150000.0,180000.0,30000.0,20.0
+git + nginx + redis,git + redis,nginx,19,13,231,60,150000.0,180000.0,30000.0,20.0
+celery + redis + sql,celery + redis,sql,32,16,118,46,140000.0,167500.0,27500.0,19.64
+django framework + flask + python,django framework + python,flask,83,22,722,203,140000.0,167500.0,27500.0,19.64
+docker + git + nginx,docker + git,nginx,50,14,355,98,140000.0,167500.0,27500.0,19.64
+docker + fastapi + python,docker + python,fastapi,170,42,792,196,160000.0,190000.0,30000.0,18.75
+flask + git + python,git + python,flask,103,34,905,260,135000.0,160000.0,25000.0,18.52
+flask + git + nginx,flask + git,nginx,12,10,114,38,152500.0,180000.0,27500.0,18.03
+celery + django + linux,django + linux,celery,21,12,87,29,140000.0,165000.0,25000.0,17.86
+django framework + fastapi + python,django framework + python,fastapi,124,25,722,203,140000.0,165000.0,25000.0,17.86
+django framework + postgresql + rabbitmq,django framework + postgresql,rabbitmq,61,16,442,111,140000.0,165000.0,25000.0,17.86
+fastapi + linux + python,linux + python,fastapi,89,26,660,189,140000.0,165000.0,25000.0,17.86
+git + redis + sql,git + sql,redis,59,22,303,94,140000.0,165000.0,25000.0,17.86
+aiohttp + asyncio + python,asyncio + python,aiohttp,34,18,129,45,340000.0,400000.0,60000.0,17.65
+django framework + linux + rest api,django framework + linux,rest api,26,14,170,61,130000.0,152500.0,22500.0,17.31
+backend + docker + redis,docker + redis,backend,23,16,186,62,150000.0,175000.0,25000.0,16.67
+backend + rest api + sql,rest api + sql,backend,25,13,113,31,150000.0,175000.0,25000.0,16.67
+docker + linux + sql,docker + sql,linux,87,20,277,75,150000.0,175000.0,25000.0,16.67
+fastapi + git + rest api,fastapi + git,rest api,25,15,164,51,150000.0,175000.0,25000.0,16.67
+python + redis + sql,python + sql,redis,105,43,773,222,150000.0,175000.0,25000.0,16.67
+flask + redis + sql,flask + sql,redis,34,19,121,37,155000.0,180000.0,25000.0,16.13
+django framework + python + rest api,django framework + python,rest api,74,32,722,203,140000.0,162500.0,22500.0,16.07
+docker + git + rabbitmq,docker + git,rabbitmq,84,12,355,98,140000.0,162500.0,22500.0,16.07
+git + postgresql + rabbitmq,git + postgresql,rabbitmq,92,18,494,145,140000.0,162500.0,22500.0,16.07
+django framework + git + nginx,django framework + git,nginx,19,12,295,107,125000.0,145000.0,20000.0,16.0
+docker + linux + rabbitmq,docker + linux,rabbitmq,45,12,253,65,175000.0,202500.0,27500.0,15.71
+celery + docker + python,docker + python,celery,120,38,792,196,160000.0,185000.0,25000.0,15.62
+celery + django framework + linux,django framework + linux,celery,28,11,170,61,130000.0,150000.0,20000.0,15.38
+django framework + linux + redis,django framework + linux,redis,30,11,170,61,130000.0,150000.0,20000.0,15.38
+javascript + mysql + php,javascript + mysql,php,14,10,24,17,120000.0,137500.0,17500.0,14.58
+celery + nosql + английский язык,celery + английский язык,nosql,11,10,18,14,175000.0,200000.0,25000.0,14.29
+postgresql + python + rabbitmq,postgresql + python,rabbitmq,229,48,1304,321,175000.0,200000.0,25000.0,14.29
+postgresql + python + redis,postgresql + python,redis,294,93,1304,321,175000.0,200000.0,25000.0,14.29
+django framework + fastapi + rest api,django framework + fastapi,rest api,19,10,130,30,150000.0,170000.0,20000.0,13.33
+docker + redis + rest api,docker + redis,rest api,30,12,186,62,150000.0,170000.0,20000.0,13.33
+flask + python + sql,python + sql,flask,118,35,773,222,150000.0,170000.0,20000.0,13.33
+celery + git + nginx,celery + git,nginx,15,11,77,32,137500.0,155000.0,17500.0,12.73
+docker + flask + python,docker + python,flask,101,25,792,196,160000.0,180000.0,20000.0,12.5
+backend + django + git,django + git,backend,27,12,159,40,125000.0,140000.0,15000.0,12.0
+backend + django framework + git,django framework + git,backend,31,10,295,107,125000.0,140000.0,15000.0,12.0
+celery + django framework + git,django framework + git,celery,56,23,295,107,125000.0,140000.0,15000.0,12.0
+django + git + rest api,django + git,rest api,51,12,159,40,125000.0,140000.0,15000.0,12.0
+django framework + git + redis,django framework + git,redis,98,33,295,107,125000.0,140000.0,15000.0,12.0
+django framework + git + rest,django framework + git,rest,75,18,295,107,125000.0,140000.0,15000.0,12.0
+django framework + git + rest api,django framework + git,rest api,40,15,295,107,125000.0,140000.0,15000.0,12.0
+django framework + git + английский язык,django framework + git,английский язык,16,10,295,107,125000.0,140000.0,15000.0,12.0
+django framework + git + ооп,django framework + git,ооп,44,17,295,107,125000.0,140000.0,15000.0,12.0
+celery + django + sql,django + sql,celery,31,14,139,43,150000.0,167500.0,17500.0,11.67
+docker + redis + sql,docker + sql,redis,61,24,277,75,150000.0,167500.0,17500.0,11.67
+backend + python + redis,python + redis,backend,41,21,457,138,180000.0,200000.0,20000.0,11.11
+python + rabbitmq + redis,python + redis,rabbitmq,108,39,457,138,180000.0,200000.0,20000.0,11.11
+celery + django framework + postgresql,django framework + postgresql,celery,72,23,442,111,140000.0,155000.0,15000.0,10.71
+django framework + nginx + python,django framework + python,nginx,38,23,722,203,140000.0,155000.0,15000.0,10.71
+flask + git + sql,git + sql,flask,54,19,303,94,140000.0,155000.0,15000.0,10.71
+asyncio + bottle + python,asyncio + python,bottle,18,11,129,45,340000.0,375000.0,35000.0,10.29
+asyncio + clickhouse + python,asyncio + python,clickhouse,33,12,129,45,340000.0,375000.0,35000.0,10.29
+asyncio + python + zeromq,asyncio + python,zeromq,11,11,129,45,340000.0,375000.0,35000.0,10.29
+django + git + английский язык,django + git,английский язык,15,10,159,40,125000.0,137500.0,12500.0,10.0
+docker + linux + python,docker + python,linux,236,62,792,196,160000.0,175000.0,15000.0,9.38
+flask + nginx + python,flask + python,nginx,16,12,319,78,165000.0,180000.0,15000.0,9.09
+nginx + redis + sql,redis + sql,nginx,17,11,106,44,165000.0,180000.0,15000.0,9.09
+asyncio + bottle + postgresql,asyncio + postgresql,bottle,11,11,69,36,345000.0,375000.0,30000.0,8.7
+asyncio + postgresql + zeromq,asyncio + postgresql,zeromq,11,11,69,36,345000.0,375000.0,30000.0,8.7
+numpy + postgresql + python,postgresql + python,numpy,25,10,1304,321,175000.0,190000.0,15000.0,8.57
+celery + django + git,django + git,celery,35,16,159,40,125000.0,135000.0,10000.0,8.0
+api + python + rest,python + rest,api,41,15,272,57,130000.0,140000.0,10000.0,7.69
+backend + redis + rest api,redis + rest api,backend,21,11,53,24,130000.0,140000.0,10000.0,7.69
+javascript + mysql + postgresql,javascript + postgresql,mysql,17,11,116,28,130000.0,140000.0,10000.0,7.69
+python + rest + rest api,python + rest,rest api,29,10,272,57,130000.0,140000.0,10000.0,7.69
+api + git + postgresql,git + postgresql,api,37,17,494,145,140000.0,150000.0,10000.0,7.14
+api + git + rest,git + rest,api,26,13,192,40,140000.0,150000.0,10000.0,7.14
+backend + git + sql,git + sql,backend,27,12,303,94,140000.0,150000.0,10000.0,7.14
+backend + mysql + python,mysql + python,backend,22,10,167,53,140000.0,150000.0,10000.0,7.14
+celery + django + django framework,django + django framework,celery,38,19,128,40,140000.0,150000.0,10000.0,7.14
+django framework + docker + flask,django framework + docker,flask,38,15,252,78,140000.0,150000.0,10000.0,7.14
+django framework + docker + mysql,django framework + docker,mysql,32,14,252,78,140000.0,150000.0,10000.0,7.14
+django framework + docker + redis,django framework + docker,redis,96,42,252,78,140000.0,150000.0,10000.0,7.14
+django framework + fastapi + postgresql,django framework + postgresql,fastapi,87,15,442,111,140000.0,150000.0,10000.0,7.14
+django framework + flask + postgresql,django framework + postgresql,flask,56,17,442,111,140000.0,150000.0,10000.0,7.14
+django framework + flask + sql,django framework + sql,flask,35,13,171,64,140000.0,150000.0,10000.0,7.14
+django framework + http + python,django framework + python,http,20,10,722,203,140000.0,150000.0,10000.0,7.14
+django framework + mongodb + python,django framework + python,mongodb,36,10,722,203,140000.0,150000.0,10000.0,7.14
+django framework + postgresql + redis,django framework + postgresql,redis,125,44,442,111,140000.0,150000.0,10000.0,7.14
+django framework + python + redis,django framework + python,redis,146,53,722,203,140000.0,150000.0,10000.0,7.14
+django framework + redis + sql,django framework + sql,redis,44,20,171,64,140000.0,150000.0,10000.0,7.14
+django framework + rest api + sql,django framework + sql,rest api,32,17,171,64,140000.0,150000.0,10000.0,7.14
+docker + flask + git,docker + git,flask,51,18,355,98,140000.0,150000.0,10000.0,7.14
+docker + git + redis,docker + git,redis,89,32,355,98,140000.0,150000.0,10000.0,7.14
+docker + git + rest,docker + git,rest,62,18,355,98,140000.0,150000.0,10000.0,7.14
+fastapi + git + postgresql,git + postgresql,fastapi,108,33,494,145,140000.0,150000.0,10000.0,7.14
+flask + git + postgresql,git + postgresql,flask,58,17,494,145,140000.0,150000.0,10000.0,7.14
+flask + git + rest,git + rest,flask,32,10,192,40,140000.0,150000.0,10000.0,7.14
+git + rest + sql,git + sql,rest,35,14,303,94,140000.0,150000.0,10000.0,7.14
+linux + python + redis,linux + python,redis,78,34,660,189,140000.0,150000.0,10000.0,7.14
+mysql + nginx + python,mysql + python,nginx,18,11,167,53,140000.0,150000.0,10000.0,7.14
+api + docker + sql,docker + sql,api,42,16,277,75,150000.0,160000.0,10000.0,6.67
+api + postgresql + sql,postgresql + sql,api,33,14,369,99,150000.0,160000.0,10000.0,6.67
+celery + django framework + rabbitmq,celery + django framework,rabbitmq,26,11,108,36,187500.0,200000.0,12500.0,6.67
+django + docker + redis,docker + redis,django,54,21,186,62,150000.0,160000.0,10000.0,6.67
+django + flask + python,django + python,flask,75,16,360,109,150000.0,160000.0,10000.0,6.67
+python + rest api + solid,python + rest api,solid,14,10,225,66,150000.0,160000.0,10000.0,6.67
+api + docker + python,docker + python,api,76,29,792,196,160000.0,170000.0,10000.0,6.25
+fastapi + flask + python,fastapi + python,flask,95,22,508,149,175000.0,185000.0,10000.0,5.71
+django framework + nginx + sql,django framework + sql,nginx,17,10,171,64,140000.0,147500.0,7500.0,5.36
+backend + celery + django framework,celery + django framework,backend,24,12,108,36,187500.0,197500.0,10000.0,5.33
+aiohttp + asyncio + rabbitmq,aiohttp + asyncio,rabbitmq,19,12,36,18,400000.0,420000.0,20000.0,5.0
+fastapi + git + pandas,fastapi + git,pandas,14,10,164,51,150000.0,157500.0,7500.0,5.0
+api + docker + postgresql,docker + postgresql,api,47,18,484,120,152500.0,160000.0,7500.0,4.92
+django framework + git + rabbitmq,django framework + git,rabbitmq,35,10,295,107,125000.0,130000.0,5000.0,4.0
+celery + nginx + python,celery + python,nginx,30,17,191,65,135000.0,140000.0,5000.0,3.7
+fastapi + git + python,git + python,fastapi,158,47,905,260,135000.0,140000.0,5000.0,3.7
+git + linux + python,git + python,linux,344,120,905,260,135000.0,140000.0,5000.0,3.7
+git + python + redis,git + python,redis,217,53,905,260,135000.0,140000.0,5000.0,3.7
+git + python + rest api,git + python,rest api,108,31,905,260,135000.0,140000.0,5000.0,3.7
+git + python + sql,git + python,sql,299,91,905,260,135000.0,140000.0,5000.0,3.7
+api + docker + git,docker + git,api,37,20,355,98,140000.0,145000.0,5000.0,3.57
+api + git + rest api,git + rest api,api,21,12,110,31,140000.0,145000.0,5000.0,3.57
+backend + celery + redis,celery + redis,backend,26,14,118,46,140000.0,145000.0,5000.0,3.57
+celery + nginx + redis,celery + redis,nginx,24,14,118,46,140000.0,145000.0,5000.0,3.57
+django + django framework + docker,django framework + docker,django,56,26,252,78,140000.0,145000.0,5000.0,3.57
+celery + git + linux,git + linux,celery,31,12,357,126,145000.0,150000.0,5000.0,3.45
+git + linux + mysql,git + linux,mysql,43,19,357,126,145000.0,150000.0,5000.0,3.45
+git + linux + sql,git + linux,sql,123,41,357,126,145000.0,150000.0,5000.0,3.45
+http + python + sql,python + sql,http,29,10,773,222,150000.0,155000.0,5000.0,3.33
+ci/cd + postgresql + python,postgresql + python,ci/cd,64,15,1304,321,175000.0,180000.0,5000.0,2.86
+fastapi + pandas + python,fastapi + python,pandas,24,13,508,149,175000.0,180000.0,5000.0,2.86
+fastapi + postgresql + python,postgresql + python,fastapi,298,77,1304,321,175000.0,180000.0,5000.0,2.86
+python + rabbitmq + rest,python + rabbitmq,rest,34,10,307,73,200000.0,205000.0,5000.0,2.5
+django + django framework + linux,django framework + linux,django,37,20,170,61,130000.0,132500.0,2500.0,1.92
+django framework + linux + rest,django framework + linux,rest,33,10,170,61,130000.0,132500.0,2500.0,1.92
+backend + git + python,git + python,backend,52,20,905,260,135000.0,137500.0,2500.0,1.85
+git + go + python,git + python,go,22,10,905,260,135000.0,137500.0,2500.0,1.85
+git + mysql + python,git + python,mysql,87,30,905,260,135000.0,137500.0,2500.0,1.85
+backend + django + rest api,django + rest api,backend,26,16,75,26,137500.0,140000.0,2500.0,1.82
+docker + git + mysql,docker + git,mysql,39,16,355,98,140000.0,142500.0,2500.0,1.79
+celery + docker + redis,docker + redis,celery,73,26,186,62,150000.0,152500.0,2500.0,1.67
+flask + postgresql + sql,postgresql + sql,flask,49,16,369,99,150000.0,152500.0,2500.0,1.67
+docker + linux + postgresql,docker + postgresql,linux,118,34,484,120,152500.0,155000.0,2500.0,1.64
+api + fastapi + postgresql,fastapi + postgresql,api,23,14,312,87,175000.0,175000.0,0.0,0.0
+api + fastapi + python,fastapi + python,api,36,20,508,149,175000.0,175000.0,0.0,0.0
+api + github + python,api + python,github,20,10,163,65,135000.0,135000.0,0.0,0.0
+api + linux + python,linux + python,api,45,21,660,189,140000.0,140000.0,0.0,0.0
+api + postgresql + python,postgresql + python,api,81,33,1304,321,175000.0,175000.0,0.0,0.0
+api + python + redis,python + redis,api,40,17,457,138,180000.0,180000.0,0.0,0.0
+asyncio + bottle + clickhouse,asyncio + clickhouse,bottle,18,11,33,12,375000.0,375000.0,0.0,0.0
+asyncio + bottle + zeromq,asyncio + bottle,zeromq,11,11,18,11,375000.0,375000.0,0.0,0.0
+asyncio + clickhouse + redis,clickhouse + redis,asyncio,18,11,47,15,375000.0,375000.0,0.0,0.0
+asyncio + clickhouse + zeromq,asyncio + clickhouse,zeromq,11,11,33,12,375000.0,375000.0,0.0,0.0
+backend + celery + python,celery + python,backend,34,17,191,65,135000.0,135000.0,0.0,0.0
+backend + django + django framework,django + django framework,backend,28,13,128,40,140000.0,140000.0,0.0,0.0
+backend + django + sql,django + sql,backend,32,19,139,43,150000.0,150000.0,0.0,0.0
+backend + django framework + postgresql,django framework + postgresql,backend,29,13,442,111,140000.0,140000.0,0.0,0.0
+backend + django framework + python,django framework + python,backend,51,19,722,203,140000.0,140000.0,0.0,0.0
+backend + django framework + sql,django framework + sql,backend,27,11,171,64,140000.0,140000.0,0.0,0.0
+backend + git + postgresql,git + postgresql,backend,36,13,494,145,140000.0,140000.0,0.0,0.0
+backend + git + rest api,git + rest api,backend,26,13,110,31,140000.0,140000.0,0.0,0.0
+backend + linux + postgresql,linux + postgresql,backend,16,10,271,75,140000.0,140000.0,0.0,0.0
+backend + linux + python,linux + python,backend,29,10,660,189,140000.0,140000.0,0.0,0.0
+backend + postgresql + rest api,postgresql + rest api,backend,24,11,127,32,140000.0,140000.0,0.0,0.0
+backend + postgresql + sql,postgresql + sql,backend,35,17,369,99,150000.0,150000.0,0.0,0.0
+backend + python + sql,python + sql,backend,53,24,773,222,150000.0,150000.0,0.0,0.0
+bash + python + rest api,python + rest api,bash,15,10,225,66,150000.0,150000.0,0.0,0.0
+bottle + clickhouse + redis,clickhouse + redis,bottle,11,11,47,15,375000.0,375000.0,0.0,0.0
+bottle + clickhouse + zeromq,bottle + clickhouse,zeromq,11,11,18,11,375000.0,375000.0,0.0,0.0
+bottle + postgresql + zeromq,bottle + postgresql,zeromq,11,11,11,11,375000.0,375000.0,0.0,0.0
+bottle + python + zeromq,bottle + python,zeromq,11,11,18,11,375000.0,375000.0,0.0,0.0
+bottle + redis + zeromq,bottle + redis,zeromq,11,11,11,11,375000.0,375000.0,0.0,0.0
+celery + docker + git,docker + git,celery,57,23,355,98,140000.0,140000.0,0.0,0.0
+celery + docker + postgresql,docker + postgresql,celery,85,26,484,120,152500.0,152500.0,0.0,0.0
+celery + git + postgresql,git + postgresql,celery,53,21,494,145,140000.0,140000.0,0.0,0.0
+celery + git + python,git + python,celery,73,29,905,260,135000.0,135000.0,0.0,0.0
+celery + python + rabbitmq,python + rabbitmq,celery,56,17,307,73,200000.0,200000.0,0.0,0.0
+clickhouse + fastapi + postgresql,fastapi + postgresql,clickhouse,35,12,312,87,175000.0,175000.0,0.0,0.0
+clickhouse + fastapi + python,fastapi + python,clickhouse,36,12,508,149,175000.0,175000.0,0.0,0.0
+clickhouse + redis + zeromq,clickhouse + redis,zeromq,11,11,47,15,375000.0,375000.0,0.0,0.0
+css + html + python,html + python,css,51,33,88,52,100000.0,100000.0,0.0,0.0
+css + postgresql + python,postgresql + python,css,24,15,1304,321,175000.0,175000.0,0.0,0.0
+django + django framework + git,django framework + git,django,73,26,295,107,125000.0,125000.0,0.0,0.0
+django + django framework + python,django framework + python,django,128,40,722,203,140000.0,140000.0,0.0,0.0
+django + django framework + redis,django framework + redis,django,64,21,157,57,150000.0,150000.0,0.0,0.0
+django + django framework + rest api,django + django framework,rest api,29,15,128,40,140000.0,140000.0,0.0,0.0
+django + django framework + sql,django framework + sql,django,37,11,171,64,140000.0,140000.0,0.0,0.0
+django + docker + python,docker + python,django,157,53,792,196,160000.0,160000.0,0.0,0.0
+django + fastapi + sql,django + sql,fastapi,30,10,139,43,150000.0,150000.0,0.0,0.0
+django + git + ооп,django + git,ооп,24,11,159,40,125000.0,125000.0,0.0,0.0
+django + linux + python,linux + python,django,85,29,660,189,140000.0,140000.0,0.0,0.0
+django + python + sql,python + sql,django,133,40,773,222,150000.0,150000.0,0.0,0.0
+django framework + docker + rest api,django framework + docker,rest api,35,11,252,78,140000.0,140000.0,0.0,0.0
+django framework + docker + английский язык,django framework + docker,английский язык,14,10,252,78,140000.0,140000.0,0.0,0.0
+django framework + fastapi + flask,django framework + fastapi,flask,33,12,130,30,150000.0,150000.0,0.0,0.0
+django framework + flask + mongodb,django framework + flask,mongodb,17,10,92,27,150000.0,150000.0,0.0,0.0
+django framework + flask + redis,django framework + redis,flask,34,13,157,57,150000.0,150000.0,0.0,0.0
+django framework + linux + английский язык,django framework + linux,английский язык,14,11,170,61,130000.0,130000.0,0.0,0.0
+django framework + mysql + redis,django framework + redis,mysql,26,10,157,57,150000.0,150000.0,0.0,0.0
+django framework + postgresql + rest,django framework + postgresql,rest,77,23,442,111,140000.0,140000.0,0.0,0.0
+django framework + postgresql + rest api,django framework + postgresql,rest api,46,17,442,111,140000.0,140000.0,0.0,0.0
+django framework + python + rest,django framework + python,rest,88,23,722,203,140000.0,140000.0,0.0,0.0
+django framework + python + веб-программирование,django framework + python,веб-программирование,16,13,722,203,140000.0,140000.0,0.0,0.0
+django framework + python + ооп,django framework + python,ооп,50,19,722,203,140000.0,140000.0,0.0,0.0
+django framework + redis + rest,django framework + redis,rest,53,11,157,57,150000.0,150000.0,0.0,0.0
+docker + fastapi + redis,docker + redis,fastapi,46,13,186,62,150000.0,150000.0,0.0,0.0
+docker + flask + redis,docker + redis,flask,40,16,186,62,150000.0,150000.0,0.0,0.0
+docker + git + python,git + python,docker,336,92,905,260,135000.0,135000.0,0.0,0.0
+docker + mysql + nginx,docker + nginx,mysql,14,10,84,27,150000.0,150000.0,0.0,0.0
+docker + mysql + redis,docker + redis,mysql,30,14,186,62,150000.0,150000.0,0.0,0.0
+docker + mysql + sql,docker + sql,mysql,21,10,277,75,150000.0,150000.0,0.0,0.0
+docker + nginx + postgresql,docker + postgresql,nginx,71,22,484,120,152500.0,152500.0,0.0,0.0
+docker + nginx + sql,docker + sql,nginx,51,15,277,75,150000.0,150000.0,0.0,0.0
+docker + redis + rest,docker + redis,rest,38,11,186,62,150000.0,150000.0,0.0,0.0
+fastapi + flask + git,fastapi + git,flask,32,12,164,51,150000.0,150000.0,0.0,0.0
+fastapi + linux + rest api,fastapi + linux,rest api,17,12,91,26,165000.0,165000.0,0.0,0.0
+fastapi + postgresql + redis,postgresql + redis,fastapi,73,27,314,104,180000.0,180000.0,0.0,0.0
+flask + git + redis,git + redis,flask,47,21,231,60,150000.0,150000.0,0.0,0.0
+flask + mongodb + redis,flask + redis,mongodb,19,10,92,32,150000.0,150000.0,0.0,0.0
+flask + postgresql + python,postgresql + python,flask,156,33,1304,321,175000.0,175000.0,0.0,0.0
+git + linux + postgresql,git + postgresql,linux,161,58,494,145,140000.0,140000.0,0.0,0.0
+git + linux + rest,git + linux,rest,41,18,357,126,145000.0,145000.0,0.0,0.0
+git + linux + английский язык,git + linux,английский язык,14,10,357,126,145000.0,145000.0,0.0,0.0
+git + mongodb + postgresql,git + postgresql,mongodb,45,17,494,145,140000.0,140000.0,0.0,0.0
+git + mongodb + redis,git + redis,mongodb,24,10,231,60,150000.0,150000.0,0.0,0.0
+git + mongodb + sql,git + sql,mongodb,30,14,303,94,140000.0,140000.0,0.0,0.0
+git + mysql + postgresql,git + postgresql,mysql,55,13,494,145,140000.0,140000.0,0.0,0.0
+git + mysql + redis,git + redis,mysql,37,18,231,60,150000.0,150000.0,0.0,0.0
+git + pandas + python,git + python,pandas,24,14,905,260,135000.0,135000.0,0.0,0.0
+git + postgresql + rest api,git + postgresql,rest api,78,21,494,145,140000.0,140000.0,0.0,0.0
+git + postgresql + sql,git + postgresql,sql,187,52,494,145,140000.0,140000.0,0.0,0.0
+git + postgresql + ооп,git + postgresql,ооп,52,17,494,145,140000.0,140000.0,0.0,0.0
+git + rabbitmq + redis,git + redis,rabbitmq,36,11,231,60,150000.0,150000.0,0.0,0.0
+git + redis + rest,git + redis,rest,113,14,231,60,150000.0,150000.0,0.0,0.0
+git + rest api + sql,git + sql,rest api,59,11,303,94,140000.0,140000.0,0.0,0.0
+git + sql + ооп,git + sql,ооп,50,21,303,94,140000.0,140000.0,0.0,0.0
+html + postgresql + python,postgresql + python,html,30,19,1304,321,175000.0,175000.0,0.0,0.0
+linux + mysql + redis,linux + redis,mysql,25,15,82,35,150000.0,150000.0,0.0,0.0
+linux + postgresql + rest api,linux + postgresql,rest api,39,17,271,75,140000.0,140000.0,0.0,0.0
+linux + postgresql + ооп,linux + postgresql,ооп,31,14,271,75,140000.0,140000.0,0.0,0.0
+linux + python + rest api,linux + python,rest api,57,23,660,189,140000.0,140000.0,0.0,0.0
+linux + redis + sql,linux + sql,redis,27,15,207,60,150000.0,150000.0,0.0,0.0
+mysql + postgresql + sql,postgresql + sql,mysql,43,11,369,99,150000.0,150000.0,0.0,0.0
+mysql + python + sql,python + sql,mysql,62,20,773,222,150000.0,150000.0,0.0,0.0
+nginx + postgresql + sql,postgresql + sql,nginx,53,19,369,99,150000.0,150000.0,0.0,0.0
+nginx + python + sql,python + sql,nginx,60,23,773,222,150000.0,150000.0,0.0,0.0
+python + rest + sql,python + sql,rest,78,21,773,222,150000.0,150000.0,0.0,0.0
+python + rest api + sql,python + sql,rest api,113,31,773,222,150000.0,150000.0,0.0,0.0
+python + rest api + веб-программирование,python + rest api,веб-программирование,14,10,225,66,150000.0,150000.0,0.0,0.0
+python + sql + веб-программирование,python + sql,веб-программирование,21,12,773,222,150000.0,150000.0,0.0,0.0
+rabbitmq + redis + sql,rabbitmq + redis,sql,29,13,113,42,200000.0,200000.0,0.0,0.0
+rest api + sql + веб-программирование,rest api + sql,веб-программирование,12,10,113,31,150000.0,150000.0,0.0,0.0
+docker + python + redis,docker + python,redis,173,58,792,196,160000.0,157500.0,-2500.0,-1.56
+backend + docker + postgresql,docker + postgresql,backend,32,20,484,120,152500.0,150000.0,-2500.0,-1.64
+docker + flask + postgresql,docker + postgresql,flask,69,19,484,120,152500.0,150000.0,-2500.0,-1.64
+docker + kubernetes + postgresql,docker + postgresql,kubernetes,110,15,484,120,152500.0,150000.0,-2500.0,-1.64
+docker + mysql + postgresql,docker + postgresql,mysql,39,13,484,120,152500.0,150000.0,-2500.0,-1.64
+docker + postgresql + redis,docker + postgresql,redis,139,45,484,120,152500.0,150000.0,-2500.0,-1.64
+docker + postgresql + rest,docker + postgresql,rest,57,17,484,120,152500.0,150000.0,-2500.0,-1.64
+docker + postgresql + sql,docker + postgresql,sql,149,43,484,120,152500.0,150000.0,-2500.0,-1.64
+flask + git + mongodb,flask + git,mongodb,20,10,114,38,152500.0,150000.0,-2500.0,-1.64
+postgresql + redis + sql,postgresql + sql,redis,77,28,369,99,150000.0,147500.0,-2500.0,-1.67
+api + git + linux,git + linux,api,28,16,357,126,145000.0,142500.0,-2500.0,-1.72
+git + postgresql + redis,git + postgresql,redis,126,36,494,145,140000.0,137500.0,-2500.0,-1.79
+django framework + linux + mysql,django framework + linux,mysql,16,10,170,61,130000.0,127500.0,-2500.0,-1.92
+celery + docker + rabbitmq,docker + rabbitmq,celery,48,15,167,36,205000.0,200000.0,-5000.0,-2.44
+celery + postgresql + rabbitmq,postgresql + rabbitmq,celery,46,14,238,54,200000.0,195000.0,-5000.0,-2.5
+backend + postgresql + redis,postgresql + redis,backend,33,16,314,104,180000.0,175000.0,-5000.0,-2.78
+fastapi + python + rest api,fastapi + python,rest api,38,18,508,149,175000.0,170000.0,-5000.0,-2.86
+docker + ms sql + python,docker + python,ms sql,12,10,792,196,160000.0,155000.0,-5000.0,-3.12
+docker + python + sql,docker + python,sql,271,73,792,196,160000.0,155000.0,-5000.0,-3.12
+api + python + rest api,python + rest api,api,33,14,225,66,150000.0,145000.0,-5000.0,-3.33
+celery + flask + postgresql,flask + postgresql,celery,22,10,165,38,150000.0,145000.0,-5000.0,-3.33
+django framework + nginx + redis,django framework + redis,nginx,26,16,157,57,150000.0,145000.0,-5000.0,-3.33
+fastapi + postgresql + sql,postgresql + sql,fastapi,62,14,369,99,150000.0,145000.0,-5000.0,-3.33
+linux + python + sql,python + sql,linux,203,58,773,222,150000.0,145000.0,-5000.0,-3.33
+backend + git + linux,git + linux,backend,19,10,357,126,145000.0,140000.0,-5000.0,-3.45
+git + linux + rest api,git + linux,rest api,38,20,357,126,145000.0,140000.0,-5000.0,-3.45
+git + linux + ооп,git + linux,ооп,65,24,357,126,145000.0,140000.0,-5000.0,-3.45
+backend + docker + git,docker + git,backend,29,14,355,98,140000.0,135000.0,-5000.0,-3.57
+celery + linux + python,linux + python,celery,41,17,660,189,140000.0,135000.0,-5000.0,-3.57
+django + linux + postgresql,linux + postgresql,django,50,19,271,75,140000.0,135000.0,-5000.0,-3.57
+docker + fastapi + git,docker + git,fastapi,76,23,355,98,140000.0,135000.0,-5000.0,-3.57
+docker + git + postgresql,git + postgresql,docker,225,61,494,145,140000.0,135000.0,-5000.0,-3.57
+docker + git + rest api,docker + git,rest api,70,13,355,98,140000.0,135000.0,-5000.0,-3.57
+linux + postgresql + rest,linux + postgresql,rest,34,12,271,75,140000.0,135000.0,-5000.0,-3.57
+linux + python + rest,linux + python,rest,54,18,660,189,140000.0,135000.0,-5000.0,-3.57
+celery + django + rest api,celery + django,rest api,28,14,76,40,135000.0,130000.0,-5000.0,-3.7
+django framework + linux + ооп,django framework + linux,ооп,25,10,170,61,130000.0,125000.0,-5000.0,-3.85
+html + javascript + postgresql,javascript + postgresql,html,17,11,116,28,130000.0,125000.0,-5000.0,-3.85
+javascript + python + rest,python + rest,javascript,21,11,272,57,130000.0,125000.0,-5000.0,-3.85
+kafka + python + sqlalchemy,kafka + python,sqlalchemy,20,10,199,33,250000.0,240000.0,-10000.0,-4.0
+mysql + python + ооп,python + ооп,mysql,21,11,173,48,125000.0,120000.0,-5000.0,-4.0
+ms sql + postgresql + python,postgresql + python,ms sql,18,10,1304,321,175000.0,167500.0,-7500.0,-4.29
+celery + flask + git,flask + git,celery,22,10,114,38,152500.0,145000.0,-7500.0,-4.92
+django + linux + redis,django + redis,linux,22,10,105,37,150000.0,142500.0,-7500.0,-5.0
+django + nginx + sql,django + sql,nginx,42,10,139,43,150000.0,142500.0,-7500.0,-5.0
+django + git + linux,git + linux,django,56,22,357,126,145000.0,137500.0,-7500.0,-5.17
+django + django framework + rest,django + django framework,rest,47,10,128,40,140000.0,132500.0,-7500.0,-5.36
+django framework + docker + nginx,django framework + docker,nginx,25,14,252,78,140000.0,132500.0,-7500.0,-5.36
+django framework + docker + rest,django framework + docker,rest,46,12,252,78,140000.0,132500.0,-7500.0,-5.36
+django framework + git + sql,git + sql,django framework,77,34,303,94,140000.0,132500.0,-7500.0,-5.36
+linux + mysql + python,linux + python,mysql,65,26,660,189,140000.0,132500.0,-7500.0,-5.36
+linux + python + ооп,linux + python,ооп,72,22,660,189,140000.0,132500.0,-7500.0,-5.36
+git + python + rest,git + python,rest,180,34,905,260,135000.0,127500.0,-7500.0,-5.56
+celery + python + rest,python + rest,celery,28,10,272,57,130000.0,122500.0,-7500.0,-5.77
+asyncio + bottle + redis,asyncio + redis,bottle,11,11,37,19,400000.0,375000.0,-25000.0,-6.25
+asyncio + redis + zeromq,asyncio + redis,zeromq,11,11,37,19,400000.0,375000.0,-25000.0,-6.25
+backend + django + docker,django + docker,backend,27,17,160,53,160000.0,150000.0,-10000.0,-6.25
+backend + docker + python,docker + python,backend,56,27,792,196,160000.0,150000.0,-10000.0,-6.25
+docker + mongodb + python,docker + python,mongodb,77,13,792,196,160000.0,150000.0,-10000.0,-6.25
+docker + nginx + python,docker + python,nginx,82,25,792,196,160000.0,150000.0,-10000.0,-6.25
+docker + python + rest api,docker + python,rest api,110,25,792,196,160000.0,150000.0,-10000.0,-6.25
+docker + python + sqlalchemy,docker + python,sqlalchemy,50,10,792,196,160000.0,150000.0,-10000.0,-6.25
+fastapi + flask + redis,fastapi + flask,redis,26,10,101,26,160000.0,150000.0,-10000.0,-6.25
+api + django + postgresql,django + postgresql,api,24,11,231,68,150000.0,140000.0,-10000.0,-6.67
+api + django + python,django + python,api,30,12,360,109,150000.0,140000.0,-10000.0,-6.67
+api + git + redis,git + redis,api,21,11,231,60,150000.0,140000.0,-10000.0,-6.67
+backend + django + postgresql,django + postgresql,backend,32,18,231,68,150000.0,140000.0,-10000.0,-6.67
+backend + django + python,django + python,backend,48,26,360,109,150000.0,140000.0,-10000.0,-6.67
+backend + django + redis,django + redis,backend,21,13,105,37,150000.0,140000.0,-10000.0,-6.67
+backend + docker + rest api,docker + rest api,backend,21,15,119,25,150000.0,140000.0,-10000.0,-6.67
+backend + python + rest api,python + rest api,backend,41,20,225,66,150000.0,140000.0,-10000.0,-6.67
+celery + postgresql + sql,postgresql + sql,celery,39,17,369,99,150000.0,140000.0,-10000.0,-6.67
+django + javascript + postgresql,django + postgresql,javascript,20,11,231,68,150000.0,140000.0,-10000.0,-6.67
+django + javascript + sql,django + sql,javascript,19,13,139,43,150000.0,140000.0,-10000.0,-6.67
+django + postgresql + rest,django + postgresql,rest,49,10,231,68,150000.0,140000.0,-10000.0,-6.67
+django + postgresql + rest api,django + postgresql,rest api,51,13,231,68,150000.0,140000.0,-10000.0,-6.67
+django + postgresql + sql,postgresql + sql,django,92,27,369,99,150000.0,140000.0,-10000.0,-6.67
+django + python + rest,django + python,rest,60,13,360,109,150000.0,140000.0,-10000.0,-6.67
+django framework + python + sql,python + sql,django framework,165,61,773,222,150000.0,140000.0,-10000.0,-6.67
+linux + postgresql + sql,postgresql + sql,linux,91,26,369,99,150000.0,140000.0,-10000.0,-6.67
+linux + sql + ооп,linux + sql,ооп,27,13,207,60,150000.0,140000.0,-10000.0,-6.67
+mongodb + postgresql + sql,postgresql + sql,mongodb,34,15,369,99,150000.0,140000.0,-10000.0,-6.67
+mongodb + python + sql,python + sql,mongodb,48,18,773,222,150000.0,140000.0,-10000.0,-6.67
+postgresql + rest + sql,postgresql + sql,rest,41,13,369,99,150000.0,140000.0,-10000.0,-6.67
+postgresql + rest api + sql,postgresql + sql,rest api,62,12,369,99,150000.0,140000.0,-10000.0,-6.67
+postgresql + sql + ооп,postgresql + sql,ооп,46,13,369,99,150000.0,140000.0,-10000.0,-6.67
+celery + postgresql + redis,postgresql + redis,celery,78,26,314,104,180000.0,167500.0,-12500.0,-6.94
+flask + python + redis,python + redis,flask,83,28,457,138,180000.0,167500.0,-12500.0,-6.94
+celery + linux + redis,celery + redis,linux,27,12,118,46,140000.0,130000.0,-10000.0,-7.14
+css + html + javascript,html + javascript,css,33,19,53,26,70000.0,65000.0,-5000.0,-7.14
+django framework + javascript + sql,django framework + sql,javascript,24,11,171,64,140000.0,130000.0,-10000.0,-7.14
+django framework + linux + python,django framework + python,linux,166,60,722,203,140000.0,130000.0,-10000.0,-7.14
+django framework + mysql + python,django framework + python,mysql,48,17,722,203,140000.0,130000.0,-10000.0,-7.14
+django framework + postgresql + sql,django framework + postgresql,sql,82,29,442,111,140000.0,130000.0,-10000.0,-7.14
+django framework + python + английский язык,django framework + python,английский язык,33,13,722,203,140000.0,130000.0,-10000.0,-7.14
+git + postgresql + rest,git + postgresql,rest,84,25,494,145,140000.0,130000.0,-10000.0,-7.14
+http + postgresql + python,postgresql + python,http,27,10,1304,321,175000.0,162500.0,-12500.0,-7.14
+celery + python + английский язык,celery + python,английский язык,15,11,191,65,135000.0,125000.0,-10000.0,-7.41
+django + git + python,git + python,django,158,40,905,260,135000.0,125000.0,-10000.0,-7.41
+django framework + git + python,git + python,django framework,280,102,905,260,135000.0,125000.0,-10000.0,-7.41
+git + python + английский язык,git + python,английский язык,35,17,905,260,135000.0,125000.0,-10000.0,-7.41
+git + python + ооп,git + python,ооп,118,37,905,260,135000.0,125000.0,-10000.0,-7.41
+django + postgresql + rabbitmq,postgresql + rabbitmq,django,57,10,238,54,200000.0,185000.0,-15000.0,-7.5
+django + docker + postgresql,docker + postgresql,django,111,35,484,120,152500.0,140000.0,-12500.0,-8.2
+backend + git + redis,git + redis,backend,23,10,231,60,150000.0,137500.0,-12500.0,-8.33
+celery + python + sql,python + sql,celery,53,20,773,222,150000.0,137500.0,-12500.0,-8.33
+django + python + rest api,django + python,rest api,75,26,360,109,150000.0,137500.0,-12500.0,-8.33
+django + python + английский язык,django + python,английский язык,18,10,360,109,150000.0,137500.0,-12500.0,-8.33
+git + redis + rest api,git + redis,rest api,29,10,231,60,150000.0,137500.0,-12500.0,-8.33
+api + docker + linux,docker + linux,api,32,16,253,65,175000.0,160000.0,-15000.0,-8.57
+django + fastapi + postgresql,fastapi + postgresql,django,40,12,312,87,175000.0,160000.0,-15000.0,-8.57
+nginx + postgresql + python,postgresql + python,nginx,88,31,1304,321,175000.0,160000.0,-15000.0,-8.57
+django framework + docker + git,docker + git,django framework,130,50,355,98,140000.0,127500.0,-12500.0,-8.93
+docker + git + английский язык,docker + git,английский язык,19,12,355,98,140000.0,127500.0,-12500.0,-8.93
+linux + python + английский язык,linux + python,английский язык,22,14,660,189,140000.0,127500.0,-12500.0,-8.93
+mysql + php + python,mysql + python,php,18,12,167,53,140000.0,127500.0,-12500.0,-8.93
+celery + git + английский язык,celery + git,английский язык,14,11,77,32,137500.0,125000.0,-12500.0,-9.09
+flask + mongodb + python,flask + python,mongodb,25,14,319,78,165000.0,150000.0,-15000.0,-9.09
+backend + flask + python,flask + python,backend,28,10,319,78,165000.0,148750.0,-16250.0,-9.85
+api + python + rabbitmq,python + rabbitmq,api,29,11,307,73,200000.0,180000.0,-20000.0,-10.0
+api + python + sql,python + sql,api,68,27,773,222,150000.0,135000.0,-15000.0,-10.0
+celery + django + postgresql,django + postgresql,celery,49,24,231,68,150000.0,135000.0,-15000.0,-10.0
+celery + django + python,django + python,celery,73,37,360,109,150000.0,135000.0,-15000.0,-10.0
+celery + git + redis,git + redis,celery,50,23,231,60,150000.0,135000.0,-15000.0,-10.0
+clickhouse + kafka + python,kafka + python,clickhouse,33,10,199,33,250000.0,225000.0,-25000.0,-10.0
+django + git + redis,git + redis,django,55,15,231,60,150000.0,135000.0,-15000.0,-10.0
+django + nginx + postgresql,django + postgresql,nginx,49,13,231,68,150000.0,135000.0,-15000.0,-10.0
+django + nginx + python,django + python,nginx,53,16,360,109,150000.0,135000.0,-15000.0,-10.0
+django + redis + rest api,django + redis,rest api,31,17,105,37,150000.0,135000.0,-15000.0,-10.0
+django framework + docker + sql,docker + sql,django framework,81,29,277,75,150000.0,135000.0,-15000.0,-10.0
+docker + javascript + sql,docker + sql,javascript,21,13,277,75,150000.0,135000.0,-15000.0,-10.0
+docker + postgresql + python,postgresql + python,docker,464,114,1304,321,175000.0,157500.0,-17500.0,-10.0
+fastapi + git + redis,git + redis,fastapi,38,11,231,60,150000.0,135000.0,-15000.0,-10.0
+fastapi + python + sql,python + sql,fastapi,122,42,773,222,150000.0,135000.0,-15000.0,-10.0
+javascript + postgresql + sql,postgresql + sql,javascript,32,18,369,99,150000.0,135000.0,-15000.0,-10.0
+pandas + postgresql + python,postgresql + python,pandas,36,12,1304,321,175000.0,157500.0,-17500.0,-10.0
+celery + django + redis,celery + redis,django,45,22,118,46,140000.0,125000.0,-15000.0,-10.71
+celery + redis + rest api,celery + redis,rest api,35,15,118,46,140000.0,125000.0,-15000.0,-10.71
+django + django framework + postgresql,django framework + postgresql,django,83,25,442,111,140000.0,125000.0,-15000.0,-10.71
+django + docker + git,docker + git,django,93,23,355,98,140000.0,125000.0,-15000.0,-10.71
+django + git + postgresql,git + postgresql,django,114,22,494,145,140000.0,125000.0,-15000.0,-10.71
+django framework + git + postgresql,git + postgresql,django framework,207,68,494,145,140000.0,125000.0,-15000.0,-10.71
+django framework + javascript + postgresql,django framework + postgresql,javascript,58,13,442,111,140000.0,125000.0,-15000.0,-10.71
+django framework + linux + postgresql,django framework + postgresql,linux,100,32,442,111,140000.0,125000.0,-15000.0,-10.71
+docker + git + sql,docker + git,sql,133,35,355,98,140000.0,125000.0,-15000.0,-10.71
+git + mysql + rest,git + rest,mysql,30,11,192,40,140000.0,125000.0,-15000.0,-10.71
+docker + mysql + python,docker + python,mysql,65,26,792,196,160000.0,142500.0,-17500.0,-10.94
+django + postgresql + redis,postgresql + redis,django,78,21,314,104,180000.0,160000.0,-20000.0,-11.11
+git + mongodb + python,git + python,mongodb,80,28,905,260,135000.0,120000.0,-15000.0,-11.11
+nginx + python + rabbitmq,python + rabbitmq,nginx,50,10,307,73,200000.0,177500.0,-22500.0,-11.25
+docker + postgresql + rest api,docker + postgresql,rest api,74,13,484,120,152500.0,135000.0,-17500.0,-11.48
+django framework + linux + sql,linux + sql,django framework,46,14,207,60,150000.0,132500.0,-17500.0,-11.67
+docker + nginx + redis,docker + redis,nginx,30,14,186,62,150000.0,132500.0,-17500.0,-11.67
+python + sql + ооп,python + sql,ооп,75,24,773,222,150000.0,132500.0,-17500.0,-11.67
+celery + nginx + postgresql,celery + postgresql,nginx,25,12,130,44,167500.0,147500.0,-20000.0,-11.94
+django framework + docker-compose + python,django framework + python,docker-compose,15,10,722,203,140000.0,122500.0,-17500.0,-12.5
+api + celery + python,celery + python,api,30,10,191,65,135000.0,117500.0,-17500.0,-12.96
+aiohttp + asyncio + postgresql,asyncio + postgresql,aiohttp,22,13,69,36,345000.0,300000.0,-45000.0,-13.04
+django framework + git + linux,git + linux,django framework,118,47,357,126,145000.0,125000.0,-20000.0,-13.79
+backend + django framework + rest api,django framework + rest api,backend,25,12,74,32,162500.0,140000.0,-22500.0,-13.85
+django + docker + nginx,django + docker,nginx,48,12,160,53,160000.0,137500.0,-22500.0,-14.06
+django + docker + rest api,django + docker,rest api,54,14,160,53,160000.0,137500.0,-22500.0,-14.06
+django framework + docker + python,docker + python,django framework,238,74,792,196,160000.0,137500.0,-22500.0,-14.06
+backend + postgresql + python,postgresql + python,backend,61,30,1304,321,175000.0,150000.0,-25000.0,-14.29
+celery + docker + linux,docker + linux,celery,33,14,253,65,175000.0,150000.0,-25000.0,-14.29
+celery + flask + redis,celery + redis,flask,25,12,118,46,140000.0,120000.0,-20000.0,-14.29
+django + fastapi + python,fastapi + python,django,61,17,508,149,175000.0,150000.0,-25000.0,-14.29
+docker + linux + nginx,docker + linux,nginx,25,11,253,65,175000.0,150000.0,-25000.0,-14.29
+docker + linux + redis,docker + linux,redis,39,14,253,65,175000.0,150000.0,-25000.0,-14.29
+fastapi + flask + postgresql,fastapi + postgresql,flask,51,12,312,87,175000.0,150000.0,-25000.0,-14.29
+fastapi + mongodb + postgresql,fastapi + postgresql,mongodb,31,14,312,87,175000.0,150000.0,-25000.0,-14.29
+fastapi + mongodb + python,fastapi + python,mongodb,53,13,508,149,175000.0,150000.0,-25000.0,-14.29
+fastapi + postgresql + sqlalchemy,fastapi + postgresql,sqlalchemy,64,28,312,87,175000.0,150000.0,-25000.0,-14.29
+fastapi + python + sqlalchemy,fastapi + python,sqlalchemy,78,33,508,149,175000.0,150000.0,-25000.0,-14.29
+linux + mongodb + python,linux + python,mongodb,57,17,660,189,140000.0,120000.0,-20000.0,-14.29
+mongodb + postgresql + python,postgresql + python,mongodb,124,30,1304,321,175000.0,150000.0,-25000.0,-14.29
+mysql + postgresql + python,postgresql + python,mysql,86,20,1304,321,175000.0,150000.0,-25000.0,-14.29
+postgresql + python + rest api,postgresql + python,rest api,124,29,1304,321,175000.0,150000.0,-25000.0,-14.29
+postgresql + python + sqlalchemy,postgresql + python,sqlalchemy,83,29,1304,321,175000.0,150000.0,-25000.0,-14.29
+django framework + docker + postgresql,docker + postgresql,django framework,167,51,484,120,152500.0,130000.0,-22500.0,-14.75
+docker + javascript + postgresql,docker + postgresql,javascript,50,13,484,120,152500.0,130000.0,-22500.0,-14.75
+flask + postgresql + redis,postgresql + redis,flask,67,20,314,104,180000.0,152500.0,-27500.0,-15.28
+nginx + python + redis,python + redis,nginx,42,22,457,138,180000.0,152500.0,-27500.0,-15.28
+docker + javascript + python,docker + python,javascript,69,15,792,196,160000.0,135000.0,-25000.0,-15.62
+postgresql + python + sql,postgresql + python,sql,362,94,1304,321,175000.0,147500.0,-27500.0,-15.71
+backend + celery + docker,celery + docker,backend,23,13,123,39,180000.0,150000.0,-30000.0,-16.67
+celery + docker + nginx,celery + docker,nginx,26,13,123,39,180000.0,150000.0,-30000.0,-16.67
+celery + python + rest api,python + rest api,celery,45,15,225,66,150000.0,125000.0,-25000.0,-16.67
+django + html + python,django + python,html,20,13,360,109,150000.0,125000.0,-25000.0,-16.67
+django + python + redis,python + redis,django,104,37,457,138,180000.0,150000.0,-30000.0,-16.67
+django + python + ооп,django + python,ооп,35,12,360,109,150000.0,125000.0,-25000.0,-16.67
+html + python + rest api,python + rest api,html,18,12,225,66,150000.0,125000.0,-25000.0,-16.67
+mysql + python + redis,python + redis,mysql,40,19,457,138,180000.0,150000.0,-30000.0,-16.67
+postgresql + redis + rest,postgresql + redis,rest,56,11,314,104,180000.0,150000.0,-30000.0,-16.67
+fastapi + postgresql + rest api,fastapi + postgresql,rest api,30,18,312,87,175000.0,145000.0,-30000.0,-17.14
+django + docker + rest,django + docker,rest,28,10,160,53,160000.0,132500.0,-27500.0,-17.19
+git + linux + mongodb,git + linux,mongodb,41,13,357,126,145000.0,120000.0,-25000.0,-17.24
+backend + celery + django,celery + django,backend,23,12,76,40,135000.0,111250.0,-23750.0,-17.59
+git + html + javascript,git + javascript,html,22,14,86,30,70000.0,57500.0,-12500.0,-17.86
+nginx + postgresql + redis,postgresql + redis,nginx,31,14,314,104,180000.0,147500.0,-32500.0,-18.06
+docker + git + ооп,docker + git,ооп,44,14,355,98,140000.0,113750.0,-26250.0,-18.75
+backend + celery + postgresql,celery + postgresql,backend,29,14,130,44,167500.0,135000.0,-32500.0,-19.4
+python + redis + rest,python + redis,rest,120,14,457,138,180000.0,145000.0,-35000.0,-19.44
+celery + django framework + nginx,celery + django framework,nginx,19,11,108,36,187500.0,150000.0,-37500.0,-20.0
+celery + postgresql + python,postgresql + python,celery,121,37,1304,321,175000.0,140000.0,-35000.0,-20.0
+django + postgresql + python,postgresql + python,django,224,65,1304,321,175000.0,140000.0,-35000.0,-20.0
+django framework + postgresql + python,postgresql + python,django framework,429,106,1304,321,175000.0,140000.0,-35000.0,-20.0
+fastapi + linux + postgresql,fastapi + postgresql,linux,47,17,312,87,175000.0,140000.0,-35000.0,-20.0
+git + postgresql + python,postgresql + python,git,475,135,1304,321,175000.0,140000.0,-35000.0,-20.0
+javascript + python + ооп,javascript + python,ооп,28,10,225,61,100000.0,80000.0,-20000.0,-20.0
+linux + postgresql + python,postgresql + python,linux,262,71,1304,321,175000.0,140000.0,-35000.0,-20.0
+postgresql + python + rest,postgresql + python,rest,122,35,1304,321,175000.0,140000.0,-35000.0,-20.0
+postgresql + python + ооп,postgresql + python,ооп,70,17,1304,321,175000.0,140000.0,-35000.0,-20.0
+python + sql + работа с базами данных,python + sql,работа с базами данных,28,13,773,222,150000.0,120000.0,-30000.0,-20.0
+ci/cd + docker + postgresql,docker + postgresql,ci/cd,37,10,484,120,152500.0,120000.0,-32500.0,-21.31
+django + docker + linux,docker + linux,django,44,20,253,65,175000.0,137500.0,-37500.0,-21.43
+django + git + sql,git + sql,django,68,15,303,94,140000.0,110000.0,-30000.0,-21.43
+docker + linux + ооп,docker + linux,ооп,32,10,253,65,175000.0,137500.0,-37500.0,-21.43
+fastapi + flask + sql,fastapi + sql,flask,36,11,130,47,140000.0,110000.0,-30000.0,-21.43
+docker + python + rest,docker + python,rest,87,17,792,196,160000.0,125000.0,-35000.0,-21.88
+docker + python + английский язык,docker + python,английский язык,26,13,792,196,160000.0,125000.0,-35000.0,-21.88
+django framework + docker + linux,docker + linux,django framework,78,25,253,65,175000.0,135000.0,-40000.0,-22.86
+git + python + работа с базами данных,git + python,работа с базами данных,20,14,905,260,135000.0,104000.0,-31000.0,-22.96
+celery + python + redis,python + redis,celery,111,42,457,138,180000.0,135000.0,-45000.0,-25.0
+ci/cd + docker + python,docker + python,ci/cd,50,12,792,196,160000.0,120000.0,-40000.0,-25.0
+clickhouse + kafka + postgresql,kafka + postgresql,clickhouse,28,10,145,29,300000.0,225000.0,-75000.0,-25.0
+linux + postgresql + redis,postgresql + redis,linux,52,17,314,104,180000.0,135000.0,-45000.0,-25.0
+python + redis + rest api,python + redis,rest api,50,21,457,138,180000.0,135000.0,-45000.0,-25.0
+docker + git + базы данных,docker + git,базы данных,24,10,355,98,140000.0,104000.0,-36000.0,-25.71
+docker + linux + mysql,docker + linux,mysql,29,13,253,65,175000.0,130000.0,-45000.0,-25.71
+javascript + postgresql + python,postgresql + python,javascript,114,28,1304,321,175000.0,130000.0,-45000.0,-25.71
+postgresql + python + работа с базами данных,postgresql + python,работа с базами данных,32,17,1304,321,175000.0,130000.0,-45000.0,-25.71
+git + javascript + linux,git + linux,javascript,54,14,357,126,145000.0,107500.0,-37500.0,-25.86
+api + git + python,git + python,api,71,35,905,260,135000.0,100000.0,-35000.0,-25.93
+api + html + python,api + python,html,19,13,163,65,135000.0,100000.0,-35000.0,-25.93
+git + nosql + python,git + python,nosql,28,11,905,260,135000.0,100000.0,-35000.0,-25.93
+git + python + базы данных,git + python,базы данных,43,13,905,260,135000.0,100000.0,-35000.0,-25.93
+git + python + работа в команде,git + python,работа в команде,17,11,905,260,135000.0,100000.0,-35000.0,-25.93
+api + django framework + python,django framework + python,api,42,13,722,203,140000.0,100000.0,-40000.0,-28.57
+css + git + javascript,git + javascript,css,24,11,86,30,70000.0,50000.0,-20000.0,-28.57
+fastapi + git + sql,git + sql,fastapi,52,15,303,94,140000.0,100000.0,-40000.0,-28.57
+django framework + git + javascript,django framework + git,javascript,41,18,295,107,125000.0,87500.0,-37500.0,-30.0
+docker + fastapi + sql,docker + sql,fastapi,53,16,277,75,150000.0,105000.0,-45000.0,-30.0
+html + javascript + python,javascript + python,html,51,25,225,61,100000.0,70000.0,-30000.0,-30.0
+javascript + mysql + python,javascript + python,mysql,22,15,225,61,100000.0,70000.0,-30000.0,-30.0
+docker + python + ооп,docker + python,ооп,49,14,792,196,160000.0,111250.0,-48750.0,-30.47
+celery + docker + rest,celery + docker,rest,23,11,123,39,180000.0,125000.0,-55000.0,-30.56
+html + python + redis,python + redis,html,18,12,457,138,180000.0,125000.0,-55000.0,-30.56
+mysql + postgresql + redis,postgresql + redis,mysql,31,11,314,104,180000.0,125000.0,-55000.0,-30.56
+django framework + javascript + linux,django framework + linux,javascript,35,14,170,61,130000.0,90000.0,-40000.0,-30.77
+celery + flask + sql,flask + sql,celery,16,12,121,37,155000.0,105000.0,-50000.0,-32.26
+css + javascript + python,javascript + python,css,42,20,225,61,100000.0,67500.0,-32500.0,-32.5
+docker + github + python,docker + python,github,23,11,792,196,160000.0,108000.0,-52000.0,-32.5
+django framework + docker + fastapi,django framework + docker,fastapi,39,12,252,78,140000.0,93750.0,-46250.0,-33.04
+git + python + sqlalchemy,git + python,sqlalchemy,33,12,905,260,135000.0,90000.0,-45000.0,-33.33
+javascript + python + sql,python + sql,javascript,65,29,773,222,150000.0,100000.0,-50000.0,-33.33
+api + django framework + git,django framework + git,api,24,12,295,107,125000.0,82500.0,-42500.0,-34.0
+api + flask + git,flask + git,api,24,11,114,38,152500.0,100000.0,-52500.0,-34.43
+api + git + sql,git + sql,api,33,16,303,94,140000.0,90000.0,-50000.0,-35.71
+django framework + fastapi + sql,django framework + sql,fastapi,34,12,171,64,140000.0,90000.0,-50000.0,-35.71
+django framework + javascript + python,django framework + python,javascript,79,22,722,203,140000.0,90000.0,-50000.0,-35.71
+javascript + linux + python,linux + python,javascript,67,17,660,189,140000.0,90000.0,-50000.0,-35.71
+git + github + python,git + python,github,28,13,905,260,135000.0,85000.0,-50000.0,-37.04
+git + javascript + postgresql,git + postgresql,javascript,44,18,494,145,140000.0,87500.0,-52500.0,-37.5
+github + postgresql + python,postgresql + python,github,29,13,1304,321,175000.0,108000.0,-67000.0,-38.29
+postgresql + redis + rest api,postgresql + redis,rest api,36,13,314,104,180000.0,110000.0,-70000.0,-38.89
+api + flask + python,flask + python,api,41,17,319,78,165000.0,100000.0,-65000.0,-39.39
+celery + flask + python,flask + python,celery,36,14,319,78,165000.0,100000.0,-65000.0,-39.39
+css + html + sql,css + html,sql,14,12,51,33,100000.0,60000.0,-40000.0,-40.0
+python + sql + базы данных,python + sql,базы данных,41,10,773,222,150000.0,90000.0,-60000.0,-40.0
+postgresql + python + базы данных,postgresql + python,базы данных,42,12,1304,321,175000.0,104000.0,-71000.0,-40.57
+api + django framework + docker,django framework + docker,api,27,10,252,78,140000.0,80000.0,-60000.0,-42.86
+postgresql + python + работа в команде,postgresql + python,работа в команде,21,11,1304,321,175000.0,100000.0,-75000.0,-42.86
+html + javascript + sql,javascript + sql,html,15,11,66,30,110000.0,62500.0,-47500.0,-43.18
+docker + python + базы данных,docker + python,базы данных,39,12,792,196,160000.0,90000.0,-70000.0,-43.75
+django + git + javascript,django + git,javascript,18,12,159,40,125000.0,70000.0,-55000.0,-44.0
+css + javascript + sql,javascript + sql,css,13,10,66,30,110000.0,61250.0,-48750.0,-44.32
+git + javascript + python,git + python,javascript,83,29,905,260,135000.0,70000.0,-65000.0,-48.15
+django + javascript + python,django + python,javascript,34,16,360,109,150000.0,77500.0,-72500.0,-48.33
+css + git + html,css + html,git,21,12,51,33,100000.0,51250.0,-48750.0,-48.75
+api + mysql + python,mysql + python,api,21,11,167,53,140000.0,70000.0,-70000.0,-50.0
+git + javascript + sql,git + sql,javascript,37,17,303,94,140000.0,70000.0,-70000.0,-50.0
+git + mysql + sql,git + sql,mysql,38,11,303,94,140000.0,70000.0,-70000.0,-50.0
+css + python + sql,python + sql,css,20,15,773,222,150000.0,70000.0,-80000.0,-53.33
+html + python + sql,python + sql,html,28,19,773,222,150000.0,70000.0,-80000.0,-53.33
+css + git + python,git + python,css,30,14,905,260,135000.0,61250.0,-73750.0,-54.63
+git + html + python,git + python,html,35,20,905,260,135000.0,57500.0,-77500.0,-57.41

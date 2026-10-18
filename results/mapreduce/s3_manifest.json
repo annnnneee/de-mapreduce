@@ -1,0 +1,118 @@
+{
+  "format": "jsonl, независимые gzip-порции в указанном порядке",
+  "files": [
+    {
+      "k": 1,
+      "original_sha256": "c0e7d12579b6a3b746eaff2a1423e7efa1fee9f0e06915e236ac77f60e7f57d4",
+      "parts": [
+        {
+          "key": "results/mapreduce/skills_1/skills_1_part_001.jsonl.gz",
+          "bytes": 9749,
+          "sha256": "1bb33fa97268b9c5d98d0b61e4e72ae052a6874c143ef1805396eb7bd744c763"
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "original_sha256": "ce28b86e29016c585577f5a3d529c720c87e84213e18ff1a43bf69e4676b81b5",
+      "parts": [
+        {
+          "key": "results/mapreduce/skills_2/skills_2_part_001.jsonl.gz",
+          "bytes": 49340,
+          "sha256": "5dbfc19842f86f4d2a9d555931d2267ec1f806379359977f0f4e0923431b4280"
+        },
+        {
+          "key": "results/mapreduce/skills_2/skills_2_part_002.jsonl.gz",
+          "bytes": 50628,
+          "sha256": "064dc512127de4a13efe22940ae63cd8a51ddd0cd0decb4690802c0c3363bab0"
+        },
+        {
+          "key": "results/mapreduce/skills_2/skills_2_part_003.jsonl.gz",
+          "bytes": 13666,
+          "sha256": "9467f8caa7233764a8428048ed5f445ea1c44313ddcb8ba9eadbca40486cb72b"
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "original_sha256": "1d37c84c882bb2eddc8a7b6f96299434788897f79b1acf7911fb4772dc7de889",
+      "parts": [
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_001.jsonl.gz",
+          "bytes": 38744,
+          "sha256": "7d18ecea8299aad5096e2a10ea9e5efd1a1d188fd321f5c1bb4406b17e03e880"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_002.jsonl.gz",
+          "bytes": 38618,
+          "sha256": "c25bede396c082478ae6f275fbfbab55833aba784adb22aae14dc4f4d61281e9"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_003.jsonl.gz",
+          "bytes": 39306,
+          "sha256": "57b348f105db8cca2de2028577fcf4a0a2e3bf4c102f114110632e1719685c25"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_004.jsonl.gz",
+          "bytes": 38641,
+          "sha256": "e31634d48ea72e9d921d82d8dda5cac6a369ce292a9be1cb92028596060c25a6"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_005.jsonl.gz",
+          "bytes": 39895,
+          "sha256": "f75d30015eab11fe08a3d3f0ddd32d80ee087c6832abdf2f6cbbf1faa86a0f6a"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_006.jsonl.gz",
+          "bytes": 38426,
+          "sha256": "e81d1be80c8b4238da786af9710a5507e470ffcfd899f838e194675f9172f407"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_007.jsonl.gz",
+          "bytes": 43061,
+          "sha256": "4e95141c8fdffd22a42624c02fcbc4d305560d42d0f3811da9915e1264481bbb"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_008.jsonl.gz",
+          "bytes": 43996,
+          "sha256": "af2f7afd7d05be9a7a591ec26f636b92e78f636723558e36abc0e685f00bf1e2"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_009.jsonl.gz",
+          "bytes": 41342,
+          "sha256": "27ea3572ab762a6ae89cef093817018df5c3cbc3b561d51f412915089d021292"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_010.jsonl.gz",
+          "bytes": 43956,
+          "sha256": "1efbf6e11e1d9508ce132bf770c449644d917f72d17c0ae86bc826c576473cda"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_011.jsonl.gz",
+          "bytes": 39668,
+          "sha256": "8fd6c24efbc6a5dd15890269e22f8f3028c323128bbafdb6b4086ee615eea659"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_012.jsonl.gz",
+          "bytes": 42456,
+          "sha256": "508e05548a97e3ec8ffa316253dc2f4306fb148015ac8fcef959c236351179aa"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_013.jsonl.gz",
+          "bytes": 41932,
+          "sha256": "b3165cdc2a4ef425ee5e9f4f4e2039f389645171cd08e9779e44dd43ba3ea103"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_014.jsonl.gz",
+          "bytes": 51006,
+          "sha256": "199278647f8e3fab1cf326cb5018821091c7791f08f612215dadde3442443f92"
+        },
+        {
+          "key": "results/mapreduce/skills_3/skills_3_part_015.jsonl.gz",
+          "bytes": 21949,
+          "sha256": "8c3c3038d857466d940d6a592f2ce7534c9bccbfcda27d7c7cd0deef9a7e8e0e"
+        }
+      ]
+    }
+  ]
+}

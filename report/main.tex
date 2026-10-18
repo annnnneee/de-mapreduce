@@ -1,0 +1,334 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{PT Serif}
+\setsansfont{PT Sans}
+\setmonofont{Menlo}[Scale=0.85]
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\newfontfamily\cyrillicfont{PT Serif}[Script=Cyrillic]
+\newfontfamily\cyrillicfontsf{PT Sans}[Script=Cyrillic]
+\newfontfamily\cyrillicfonttt{Menlo}[Scale=0.85]
+\usepackage[a4paper,top=15mm,bottom=16mm,left=15mm,right=15mm]{geometry}
+\usepackage{graphicx,amsmath,caption,needspace,booktabs,tabularx,array,fancyvrb}
+\PassOptionsToPackage{obeyspaces}{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl,microtype}
+\graphicspath{{figures/}}
+\hypersetup{pdftitle={Технология MapReduce. Вариант 2},pdfauthor={Бондаренко Анна Андреевна}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.06}
+\captionsetup{font=small,labelfont=normalfont,labelsep=colon,justification=centering,singlelinecheck=false,skip=3pt}
+\renewcommand{\figurename}{Рисунок}
+\pagestyle{plain}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\heading}[1]{\Needspace{4\baselineskip}{\LARGE\sffamily\bfseries #1\par}\vspace{1mm}\hrule\vspace{2mm}}
+\newcommand{\block}[1]{\Needspace{3\baselineskip}\vspace{1.5mm}{\sffamily\bfseries #1\par}\vspace{0.3mm}}
+\newcommand{\shot}[2]{\par\vspace{2pt}\begin{minipage}{\linewidth}\centering\includegraphics[width=\linewidth]{#1.png}\captionof{figure}{#2}\end{minipage}\par\vspace{3pt}}
+\newcommand{\file}[1]{\nolinkurl{#1}}
+\begin{document}
+\renewcommand{\figurename}{Рисунок}
+\begin{titlepage}
+\centering
+\vspace*{15mm}
+{\Large\sffamily\bfseries Университет ИТМО\par}
+\vspace{35mm}
+{\LARGE\sffamily\bfseries Отчёт по домашнему заданию № 3\par}
+\vspace{8mm}
+{\Large Технология MapReduce\par}
+\vspace{12mm}
+{\large Дисциплина «Инженерия данных»\par}
+\vspace{12mm}
+{\large\bfseries Вариант № 2\par}
+\vspace{3mm}
+{\large Программист, разработчик на Python\par}
+\vfill
+\begin{flushright}
+{\large Выполнила:\\[2mm]Бондаренко Анна Андреевна}
+\end{flushright}
+\vspace*{35mm}
+\end{titlepage}
+\setcounter{page}{2}
+
+
+\heading{1. RustFS и исходные данные}
+
+Использован кластер RustFS из предыдущего ДЗ: четыре контейнера \file{rustfs-lab-node1}--\file{rustfs-lab-node4}. S3 API доступен на порту \file{19000}, консоль --- на \file{19001}. Конфигурация сохранена в \file{compose.yaml}.
+
+\shot{01_containers_started}{Запуск четырёх контейнеров RustFS}
+
+
+В бакет \file{hh-lake} загружен предоставленный файл \file{it_vacancies_2024.csv}. Размер --- 847\,619\,384 байта, или 808,35 MiB. Путь объекта: \file{s3://hh-lake/raw/it_vacancies_2024.csv}. После загрузки объект полностью прочитан из S3. Размер и SHA-256 совпали с исходником.
+
+\shot{02_raw_object}{Исходный CSV в бакете hh-lake}
+
+
+Из 229\,388 записей выбраны вакансии с ролью «Программист, разработчик» и отдельным словом Python в названии без учёта регистра. Python только в списке навыков недостаточно для отбора.
+
+\begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\linewidth}{Yr}
+\toprule
+Показатель & Значение \\
+\midrule
+Вакансий варианта № 2 & 3\,892 \\
+С указанными навыками & 2\,984 \\
+Без указанных навыков & 908 \\
+С любой указанной зарплатой & 1\,446 \\
+С рублёвой зарплатой на руки & 912 \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+
+\newpage\heading{2. Подсчёт MapReduce}
+
+\begin{Verbatim}[fontsize=\footnotesize]
+python scripts/run_mapreduce.py --upload
+\end{Verbatim}
+
+
+CSV читается непосредственно из S3 чанками по 1\,000 записей. Работают два процесса-маппера, всего обработано 230 чанков. Навыки приводятся к нижнему регистру, пробелы по краям и повторы внутри вакансии удаляются. Мапперы считают частоты сочетаний, родительский процесс суммирует их по ключам.
+
+Вакансия с $n$ уникальными навыками даёт $n$ отдельных навыков, $\binom{n}{2}$ пар и $\binom{n}{3}$ троек. Например, 10 навыков дают 45 пар и 120 троек. Поэтому число сочетаний растёт быстрее числа навыков.
+
+\shot{03_mapreduce_run}{Запуск MapReduce с чтением S3}
+
+
+Результаты сохранены в \file{hh-lake/results/mapreduce}. Для размеров сочетаний 1, 2 и 3 манифест содержит соответственно 1, 3 и 15 gzip-порций. Их порядок и контрольные суммы указаны в \file{manifest.json}. Порции ограничены 60 KiB из-за ошибки записи крупных объектов в используемой сборке RustFS на Docker Desktop.
+
+\shot{12_s3_results}{Результаты для навыков, пар и троек в RustFS}
+
+
+\newpage\heading{3. DuckDB и сверка}
+
+\begin{Verbatim}[fontsize=\footnotesize]
+python scripts/run_duckdb.py
+python scripts/compare_results.py
+\end{Verbatim}
+
+
+DuckDB независимо читает тот же объект S3. Условие варианта в \file{sql/prepare.sql}:
+
+\begin{Verbatim}[fontsize=\footnotesize]
+where trim(role) = 'Программист, разработчик'
+  and regexp_matches(
+      lower(name),
+      '(^|[^\p{L}\p{N}_])python([^\p{L}\p{N}_]|$)'
+  )
+\end{Verbatim}
+
+
+Для пар и троек навыки соединяются по \file{vacancy_id} с условиями \file{a.skill < b.skill} и \file{b.skill < c.skill}, чтобы исключить перестановки и повторы.
+
+\shot{04_duckdb_run}{Независимый расчёт DuckDB}
+
+
+\begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\linewidth}{cYYYY}
+\toprule
+$k$ & Ключей MR & Ключей SQL & Вхождений MR & Вхождений SQL \\
+\midrule
+1 & 1\,269 & 1\,269 & 19\,727 & 19\,727 \\
+2 & 17\,798 & 17\,798 & 81\,302 & 81\,302 \\
+3 & 115\,106 & 115\,106 & 291\,454 & 291\,454 \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+
+Вхождения --- сумма частот всех сочетаний соответствующего размера. Проверены все ключи, частоты и ID выбранных вакансий. Расхождений нет.
+
+\shot{05_comparison}{Полная сверка MapReduce и DuckDB}
+
+
+\block{Повтор маппера}
+
+\begin{Verbatim}[fontsize=\footnotesize]
+python scripts/run_mapreduce.py --inject-failure --output mapper_failure
+python scripts/compare_results.py --left mapreduce --right mapper_failure
+\end{Verbatim}
+
+
+На чанке 0 смоделирована ошибка задачи до передачи результата редьюсеру. Чанк повторён один раз. Результат совпал с обычным запуском, двойного учёта нет.
+
+\shot{06_mapper_failure}{Ошибка маппера и повтор чанка}
+
+
+\shot{07_failure_comparison}{Сверка после повтора}
+
+
+\newpage\heading{4. Время и память}
+
+\begin{Verbatim}[fontsize=\footnotesize]
+python scripts/benchmark.py --runs 3
+\end{Verbatim}
+
+
+Каждый подход запущен трижды в отдельном процессе. Измерено время запуска Python, чтения S3, расчёта и записи локальных результатов. Загрузка в S3 и внешняя сверка в замер не входят. Кеши не сбрасывались, \file{httpfs} установлен заранее.
+
+Память --- максимальная наблюдавшаяся сумма RSS родителя и дочерних процессов с паузой опроса 50 мс. Общие страницы могут учитываться повторно. Память RustFS и Docker VM не измеряется.
+
+\begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\linewidth}{cYYYY}
+\toprule
+Попытка & MR, с & MR, MiB & DuckDB, с & DuckDB, MiB \\
+\midrule
+1 & 21,154 & 364,89 & 18,839 & 1\,061,55 \\
+2 & 19,545 & 369,41 & 15,814 & 1\,246,50 \\
+3 & 20,616 & 338,70 & 14,870 & 1\,309,12 \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+
+\begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\linewidth}{Yrr}
+\toprule
+Подход & Медиана времени, с & Максимум RSS, MiB \\
+\midrule
+MapReduce & 20,616 & 369,41 \\
+DuckDB & 15,814 & 1\,309,12 \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+
+Во всех шести попытках результаты совпали. Медианное время DuckDB меньше на 23,3\%, максимальная сумма RSS больше в 3,54 раза. DuckDB использует буферы SQL-движка и группировок. MapReduce разбирает CSV и суммирует частоты в Python, а также передаёт чанки между процессами. В этих запусках выигрыш по времени сопровождается большим расходом памяти.
+
+Одиночный запуск MapReduce с \file{--upload} включает загрузку результатов, поэтому его время отличается от таблицы профилирования.
+
+\shot{08_benchmark}{Три запуска каждого подхода с измерением времени и памяти}
+
+
+\newpage\heading{5. Навыки и зарплаты}
+
+Анализ выполнен на той же выборке из 3\,892 Python-вакансий. Использованы 912 зарплат в рублях с \file{gross=false}. Для вилки берётся середина, при одной границе --- указанная сумма. Валюты и зарплаты до вычета налогов с этой выборкой не смешиваются.
+
+Для пары база --- более частый навык, для тройки --- более частая входящая пара. Частота определяется по всей выборке, медианы --- по зарплатной части. База включает целевую группу. В целевой группе не менее 10 зарплат.
+
+Разница рассчитывается как $(M_{\text{сочетания}}/M_{\text{базы}}-1)\cdot100\%$.
+
+\block{5.1. Пары навыков}
+
+\begin{Verbatim}[fontsize=\footnotesize]
+python scripts/analysis.py salary --size 2
+\end{Verbatim}
+
+
+\begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\linewidth}{YYrrcr}
+\toprule
+Сочетание & База & \shortstack[r]{Медиана\\базы, руб.} & \shortstack[r]{Медиана\\группы, руб.} & $n$ & Изм., \% \\
+\midrule
+bottle + python & python & 150\,000 & 375\,000 & 11 & +150,0 \\
+python + zeromq & python & 150\,000 & 375\,000 & 11 & +150,0 \\
+asyncio + redis & redis & 175\,000 & 400\,000 & 19 & +128,6 \\
+git + html & git & 140\,000 & 57\,500 & 20 & -58,9 \\
+css + git & git & 140\,000 & 61\,250 & 14 & -56,2 \\
+java + python & python & 150\,000 & 67\,500 & 12 & -55,0 \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+
+$n$ --- число зарплат в целевой группе. В базах Python, Redis и Git соответственно 709, 149 и 275 зарплат.
+
+\shot{09_salary_pairs}{Пары навыков с положительной и отрицательной разницей медиан}
+
+
+\newpage\heading{5. Навыки и зарплаты}
+
+\block{5.2. Тройки навыков}
+
+\begin{Verbatim}[fontsize=\footnotesize]
+python scripts/analysis.py salary --size 3
+\end{Verbatim}
+
+
+\begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\linewidth}{YYrrcr}
+\toprule
+Сочетание & База & \shortstack[r]{Медиана\\базы, руб.} & \shortstack[r]{Медиана\\группы, руб.} & $n$ & Изм., \% \\
+\midrule
+elasticsearch + python + redis & python + redis & 180\,000 & 420\,000 & 11 & +133,3 \\
+kafka + python + redis & python + redis & 180\,000 & 420\,000 & 11 & +133,3 \\
+asyncio + postgresql + redis & postgresql + redis & 180\,000 & 400\,000 & 18 & +122,2 \\
+git + html + python & git + python & 135\,000 & 57\,500 & 20 & -57,4 \\
+css + git + python & git + python & 135\,000 & 61\,250 & 14 & -54,6 \\
+css + python + sql & python + sql & 150\,000 & 70\,000 & 15 & -53,3 \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+
+$n$ --- число зарплат в целевой группе. В базах Python + Redis, PostgreSQL + Redis, Git + Python и Python + SQL соответственно 138, 104, 260 и 222 зарплаты.
+
+\shot{10_salary_triples}{Тройки навыков с положительной и отрицательной разницей медиан}
+
+
+Положительная разница связана с добавлением Bottle, ZeroMQ и asyncio. Для базы Python + Redis выделяются Elasticsearch и Kafka. Отрицательная разница наблюдается у групп с HTML, CSS и Java, а для троек --- также при добавлении CSS к Python + SQL.
+
+На результат влияет состав вакансий. В группе Bottle + Python все 11 вакансий с зарплатой требуют от трёх лет опыта. В группе Git + HTML 16 из 20 рассчитаны на опыт до трёх лет или без опыта. Поэтому разницу медиан нельзя приписать только навыку. Малые группы чувствительны к отдельным предложениям. Проверка состава групп приведена в \file{sql/experience.sql}.
+
+\newpage\heading{6. Сравнение регионов}
+
+\begin{Verbatim}[fontsize=\footnotesize]
+python scripts/analysis.py regions
+\end{Verbatim}
+
+
+Выбраны три региона с наибольшим числом вакансий варианта № 2. Общие показатели рассчитаны по всем вакансиям региона, включая записи без навыков. Зарплатные показатели используют те же рублёвые суммы на руки.
+
+\begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\linewidth}{Yrrrrr}
+\toprule
+Регион & Вакансий & С навыками & Зарплат & Доля, \% & Медиана, руб. \\
+\midrule
+Москва & 1\,908 & 1\,430 & 381 & 19,97 & 200\,000 \\
+Санкт-Петербург & 525 & 403 & 144 & 27,43 & 150\,000 \\
+Екатеринбург & 152 & 122 & 45 & 29,61 & 150\,000 \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+
+Доля --- часть всех вакансий региона с подходящей зарплатой. Для каждого размера ниже приведено самое частое сочетание. Частота считается по всем вакансиям региона, медиана --- по записям с зарплатой.
+
+\begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\linewidth}{L{31mm}cYrrr}
+\toprule
+Регион & $k$ & Сочетание & Частота & Зарплат & Медиана, руб. \\
+\midrule
+Москва & 1 & python & 1359 & 302 & 200\,000 \\
+Москва & 2 & postgresql + python & 613 & 139 & 200\,000 \\
+Москва & 3 & docker + postgresql + python & 227 & 52 & 225\,000 \\
+Санкт-Петербург & 1 & python & 391 & 111 & 140\,000 \\
+Санкт-Петербург & 2 & postgresql + python & 190 & 55 & 170\,000 \\
+Санкт-Петербург & 3 & docker + postgresql + python & 69 & 17 & 135\,000 \\
+Екатеринбург & 1 & python & 114 & 31 & 150\,000 \\
+Екатеринбург & 2 & postgresql + python & 55 & 15 & 150\,000 \\
+Екатеринбург & 3 & git + postgresql + python & 22 & 5 & 108\,000 \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+
+\shot{11_regions}{Региональные показатели и частые сочетания}
+
+
+Москва даёт наибольшую выборку и медиану 200\,000 руб. В Санкт-Петербурге и Екатеринбурге медиана равна 150\,000 руб., на 25\% ниже московской. Доля вакансий с подходящей зарплатой в Москве ниже: 19,97\% против 27,43\% и 29,61\%.
+
+Во всех трёх регионах самая частая пара --- PostgreSQL + Python. Её доля --- 32,13\% в Москве и около 36,2\% в двух других регионах. Самая частая тройка в Москве и Санкт-Петербурге --- Docker + PostgreSQL + Python. В Екатеринбурге лидирует Git + PostgreSQL + Python, но её медиана рассчитана только по пяти зарплатам.
+
+Для тройки Docker + PostgreSQL + Python медианы Москвы и Санкт-Петербурга равны 225\,000 и 135\,000 руб. по 52 и 17 зарплатам. Одинаковый стек не означает одинаковую медиану в разных регионах.
+
+\block{7. Вывод}
+
+Для варианта № 2 обработаны 3\,892 вакансии Python-разработчиков. MapReduce из S3 и независимый SQL-расчёт DuckDB полностью совпали. Повтор ошибочной задачи не изменил результат. DuckDB оказался быстрее по медиане времени, MapReduce потребовал меньше памяти по измеренной сумме RSS.
+
+Зарплатные различия зависят от сочетания навыков, региона и состава вакансий. Для всех трёх регионов выделяется пара PostgreSQL + Python. Наибольшая общая медиана среди выбранных регионов получена для Москвы.
+
+\end{document}

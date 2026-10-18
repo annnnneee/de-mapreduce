@@ -1,0 +1,17 @@
+{
+  "variant": 2,
+  "source": "s3://hh-lake/raw/it_vacancies_2024.csv",
+  "duckdb_version": "1.5.6",
+  "selected_rows": 3892,
+  "unique_combinations": {
+    "1": 1269,
+    "2": 17798,
+    "3": 115106
+  },
+  "combination_occurrences": {
+    "1": 19727,
+    "2": 81302,
+    "3": 291454
+  },
+  "elapsed_s": 15.866
+}
